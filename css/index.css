@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Coda|Lobster|Lobster+Two|Righteous|Shrikhand|Titan+One');
 
-#frontpage{
+#particles-js{
     background:
     linear-gradient(
       rgba(50, 50, 0, 0.6), 
@@ -13,7 +13,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
 }
 
 .centered{
