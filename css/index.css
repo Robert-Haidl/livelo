@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Coda|Lobster|Lobster+Two|Righteous|Shrikhand|Titan+One');
+
+#frontpage{
+    background:
+    linear-gradient(
+      rgba(50, 50, 0, 0.6), 
+      rgba(50, 50, 0, 0.6)
+    ),
+    url('../res/images/background.png');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#livelo{
+    color: lightgray;
+    font-size: 15vw;
+    font-family: 'Righteous';
+}
+
+#livelo_e{
+    font-size: 15vw;
+    font-family: 'Righteous';
+    background: -webkit-linear-gradient(yellow 35%, orange 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+#livelo_e:hover{
+    transition: 1s all ease-in-out;
+    transform: rotateY(-360deg);
+}
