@@ -42,3 +42,13 @@
     transition: 1s all ease-in-out;
     transform: rotateY(-360deg);
 }
+
+#more_information{
+    cursor: pointer;
+    color: lightgray;
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-size: 3vw;
+}
