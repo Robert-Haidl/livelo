@@ -22,6 +22,6 @@ include "models/Admin.php";
 include "models/Package.php";
 
 #define ("DBHost", "localhost");
-#define ("DBName", "ShopWG");
-#define ("DBUser", "ShopWG");
-#define ("DBPass", "Xsvk2~35");
+#define ("DBName", "dbname");
+#define ("DBUser", "dbuser");
+#define ("DBPass", "dbpass");
