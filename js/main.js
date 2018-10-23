@@ -76,12 +76,18 @@
 					target: $body,
 					visibleClass: 'is-menu-visible'
 				});
-				
+
 			$(".menuToggle").click(function() {
 					$(".menuToggle").css("display", "none");
 				  });
 				  $(".menuToggle").blur(function() {
 					$(".menuToggle").css("display", "block");
+				  });
+
+		// Fontawesome button
+
+				  $('.fas').scroll(function(){
+					$(this).css("display","none");
 				  });
 
 
