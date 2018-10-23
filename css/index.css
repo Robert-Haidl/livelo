@@ -32,7 +32,7 @@
 
 #slogan{
     color: white;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: "Open Sans", Helvetica, sans-serif;
     font-variant: small-caps;
     line-height: 0;
@@ -66,4 +66,41 @@
     text-align: center;
     width: 100%;
     font-size: 3vw;
+}
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: lightgray;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding: 1em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: lightgray;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+  color: lightgray;
 }
