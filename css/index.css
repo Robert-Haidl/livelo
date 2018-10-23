@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Coda|Lobster|Lobster+Two|Righteous|Shrikhand|Titan+One');
 
+
 #landing{
     background:
     linear-gradient(
@@ -8,7 +9,6 @@
     ),
     url('../res/images/background.png');
 
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,17 +38,34 @@
     display: inline-block;
 }
 
-#livelo_e:hover{
-    transition: 1s all ease-in-out;
-    transform: rotateY(-360deg);
+.kreativ {
+    width:100%;
+    text-align: center;
+}
+
+.kreativ h1{
+    display: inline-block;  
+    margin: 5vw;
+    padding-top: 31vw;
+    font-size: 2vw !important;
+    text-align: center;
+    font-family: Dancing Script;
+    text-transform: capitalize;
+}
+
+i {
+    padding-top: 1vw;
 }
 
 #more_information{
     cursor: pointer;
     color: lightgray;
-    position: fixed;
     bottom: 10px;
     text-align: center;
     width: 100%;
     font-size: 3vw;
+}
+
+#menu{
+    background-color:hsla(0, 0%, 9%, 0.7);
 }
