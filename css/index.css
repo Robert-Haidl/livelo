@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Coda|Lobster|Lobster+Two|Righteous|Shrikhand|Titan+One');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
 #landing{
     background:
@@ -27,6 +28,20 @@
     color: lightgray;
     font-size: 15vw;
     font-family: 'Righteous';
+}
+
+#slogan{
+    color: white;
+    font-size: 2.5vw;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-variant: small-caps;
+    line-height: 0;
+}
+
+#line{
+    margin: 1em;
+    width: 55%;
+    color: white;
 }
 
 #livelo_e{
