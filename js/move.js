@@ -7,7 +7,7 @@
      
 	
 	
-    //$(".fadeout").css("opacity", 1 - $(window).scrollTop() / 350);
+    $(".fadeout").css("opacity", 1 - $(window).scrollTop() / 350);
 
 			try{//Funktion
 		if(wScroll > $('.vonRechtsMain').offset().top - ($(window).height()/1.0)){

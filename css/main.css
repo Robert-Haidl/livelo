@@ -3522,7 +3522,7 @@ button1:disabled,
 	background-repeat: no-repeat;
 	background-position: center top;
 	position: relative;
-	background-size: 100%;
+	background-size: cover;
 	opacity: 1;
 }
 

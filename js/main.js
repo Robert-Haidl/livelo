@@ -113,7 +113,7 @@ anime.timeline({loop: false})
     duration: 700,
     easing: "easeOutExpo",
     translateY: function(e, i, l) {
-      var offset = -0.625 + 0.625*2*i;
+      var offset = -1 + 1*2*i;
       return offset + "em";
     }
   }).add({
