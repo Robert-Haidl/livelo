@@ -76,6 +76,14 @@
 					target: $body,
 					visibleClass: 'is-menu-visible'
 				});
+				
+			$(".menuToggle").click(function() {
+					$(".menuToggle").css("display", "none");
+				  });
+				  $(".menuToggle").blur(function() {
+					$(".menuToggle").css("display", "block");
+				  });
+
 
 		// Header.
 			if (skel.vars.IEVersion < 9)
