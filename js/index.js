@@ -12,8 +12,3 @@ function loadParticles(){
 	});
 }
 
-function callClickListener(){
-    $("#more_information").on("click", function(e){
-        alert("not implemented yet");
-    });
-}
