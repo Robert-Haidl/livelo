@@ -7,7 +7,8 @@
      
 	
 	
-    $(".fadeout").css("opacity", 1 - $(window).scrollTop() / 350);
+	$(".fadeout").css("opacity", 1 - $(window).scrollTop() / 350);
+	//$("#landing").css(("background", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(90, 90, 90, 0.6), url('../res/images/background.png');)"), 1 - $(window).scrollTop() / 350));
 
 			try{//Funktion
 		if(wScroll > $('.vonRechtsMain').offset().top - ($(window).height()/1.0)){

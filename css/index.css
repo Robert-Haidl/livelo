@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Coda|Lobster|Lobster+Two|Righteous|Shrikhand|Titan+One');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-#landing{
+#landing{ 
+
+
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.6), 
       rgba(180, 50, 0, 0.6)
     ),
     url('../res/images/background.png');
+    
+    
 
     background-position: center;
     background-repeat: no-repeat;
@@ -22,6 +26,11 @@
     background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.46) 5%,rgba(255,255,255,0.37) 10%,rgba(255,255,255,0.05) 15%,rgba(255,255,255,0) 20%);
 }
 
+
+.backgroundrot{
+    height:20vw;
+    position: relative;
+}
 
 .centered{
     position: absolute;
