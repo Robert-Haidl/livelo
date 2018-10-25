@@ -3506,6 +3506,7 @@ button1:disabled,
 	padding: 0;
 }
 
+
 .wrapper.style1 {
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/bg-9.jpg");
 	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/bg-9.jpg");

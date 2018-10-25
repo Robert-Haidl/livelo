@@ -15,5 +15,13 @@ function loadParticles(){
 function callClickListener(){
     $("#more_information").on("click", function(e){
         alert("not implemented yet");
-    });
+	});
+	
+
+var options = {
+  strings: ["IT Lösungen", "Suchmaschinenoptimierung", "Webdesign", "Appdesign"],
+  typeSpeed: 300
+}
+
+var typed = new Typed(".typer", options);
 }
