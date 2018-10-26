@@ -114,6 +114,19 @@
 })(jQuery);
 
 //Animation slogan
+var defaultPadding = 1;
+if (window.matchMedia("(max-width: 600px)").matches) {
+  defaultPadding = 1.5;
+}
+
+if (window.matchMedia("(max-width: 800px)").matches) {
+  defaultPadding = 1.6;
+}
+
+if (window.matchMedia("(max-width: 1050px)").matches) {
+  defaultPadding = 1.65;
+}
+
 
 anime.timeline({loop: false})
   .add({
@@ -127,8 +140,8 @@ anime.timeline({loop: false})
     duration: 700,
     easing: "easeOutExpo",
     translateY: function(e, i, l) {
-      var offset = -1 + 1*2*i;
-      return offset + "em";
+		var offset = (defaultPadding*-1) + defaultPadding*2*i;
+    return offset + "em";
     }
   }).add({
     targets: '.ml5 .ampersand',
@@ -152,7 +165,4 @@ anime.timeline({loop: false})
     duration: 900,
     offset: '-=700'
   });
-
-  // Menu disappears animation
-
   

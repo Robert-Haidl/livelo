@@ -25,3 +25,4 @@ var options = {
 
 var typed = new Typed(".typer", options);
 }
+
