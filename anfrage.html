@@ -24,11 +24,9 @@
     <link rel="stylesheet" href="css/anfrage.css">
 </head>
 
-<body>                
-           
+<body>
+
     <div id="page-wrapper">
-
-
 
 
         <!-- Header -->
@@ -54,42 +52,77 @@
             </header>
         </section>
 
-        <div class="container contact-form">
-            <form method="post">
-                <h3>Schicken Sie uns eine Anfrage!</h3>
-               <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Name" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="E-mail Adresse" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Handy Nummer" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" name="btnSubmit" id="first_div" class="btnContact" value="Senden!" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="txtMsg" id="second_div" class="form-control" value="Inhalt" style="width: 100%; height: 220px;"></textarea>
-                        </div>
-                    </div>
+        <!-- Main -->
+        <article id="main">
+            <header>
+                <div class="fadeout">
+                    <h2>Kontaktieren Sie uns!</h2>
+                    <p>Ihr Anliegen, sowie Ihre Zufriedenheit ist uns wichtig.</p>
                 </div>
-            </form>
-        </div>
+            </header>
+            <section class="wrapper style5">
+                <div class="inner">
 
-        
-        
+
+
+                    <h3>Anfragenformular</h3>
+
+
+                    <form id="myform" action="javascript:void(0);" method="post" onsubmit="PopUp();">
+
+                        <input type="text" name="vorname" placeholder="Vorname*" required>
+                        <br>
+                        <input type="text" name="nachname" placeholder="Nachname*" required>
+                        <br>
+                        <input type="email" name="mail" placeholder="Email*" required>
+                        <br>
+                        <input type="text" name="telefonnummer" placeholder="Telefonnummer*" required>
+                        <br>
+
+
+                        <textarea maxlength="500" name="nachricht" rows="6" placeholder="Nachricht*"></textarea>
+
+                        <center>
+                            <br>
+                            *Pflichtfeld<br />
+                            <button type="submit" id="btnContact">Absenden</button>
+
+                        </center>
+
+                    </form>
+
+
+                    <div class="mb-2">Sie können uns auch gerne direkt kontaktieren:</div>
+                    <div>
+                        <i class="symbol fas fa-phone"></i>
+                        <a class="icon" href="tel:+436601567422"> 06601567422</a>
+                    </div>
+                    <div>
+                        <i class="symbol fas fa-envelope"></i>
+                        <a class="icon" href="mailto:haidlrob@gmail.com"> help@livelo.at</a>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li><a href="impressum.html" style="border: none;">Impressum</a></li>
+                <li><a href="kontakt.html" style="border: none;">Kontakt</a> </li>
+            </ul>
+        </footer>
+
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/showLoading/js/jquery.showLoading.min.js"></script>
     <script src="js/particles.min.js"></script>
 
-    
+
     <script src="js/jquery.scrollex.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
     <script src="js/skel.min.js"></script>
@@ -99,7 +132,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    
+
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
 </body>
