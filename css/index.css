@@ -19,13 +19,6 @@
     height: 100vh;
 }
 
-#test{
-    height: 20vh;
-    width: 100vw;
-    padding-top: 100vh;
-
-}
-
 
 .backgroundrot{
     height:20vw;
@@ -121,6 +114,12 @@
   color: lightgray;
 }
 
+.typer{
+    font-size: 6.5vw;
+    letter-spacing: inherit;
+    line-height: 0;
+}
+
 @media(max-width: 1050px){
     .centered{
         position: absolute;
@@ -166,8 +165,8 @@
         margin-top: 0.5em;
     }
     
-    .fas{
-        font-size: 80px;
+    .arrow_bottom{
+        font-size: 50px;
         padding-bottom: 70px;
     }
 }
@@ -217,8 +216,8 @@
         margin-top: 0.5em;
     }
 
-    .fas{
-        font-size: 80px;
+    .arrow_bottom{
+        font-size: 40px;
         padding-bottom: 50px;
     }
 }
@@ -268,8 +267,8 @@
         margin-top: 0.5em;
     }
 
-    .fas{
-        font-size: 40px;
+    .arrow_bottom{
+        font-size: 30px;
         padding-bottom: 25px;
     }
 }
