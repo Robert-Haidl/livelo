@@ -3691,8 +3691,7 @@ button1:disabled,
 		background-size: cover;
 		background-attachment: scroll;
 
-		padding: 7em 1.5em 0em 1em;
-		height: 85vh;
+		padding: 7em 1.5em 7em 1em;
 
 		min-height: 0;
 
