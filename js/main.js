@@ -165,4 +165,26 @@ anime.timeline({loop: false})
     duration: 900,
     offset: '-=700'
   });
-  
+	
+	/*$(document).ready(function(){
+		$(window).scroll(function(){
+			if($(this).scrollTop() / 350){
+				$("#landing").css({"background": "linear-gradient(rgba(0, 0, 0, 0.6), rgba(90, 90, 90, 0.6), url('../res/images/background.png')"})
+			}
+			else{
+				$("#landing").css({"opacity":"1"})
+			}
+		})
+	})
+	*/
+
+// Menu disappear
+
+/*	if($(".menuToggle").click(function(){
+			$(this).css({"display":"hide"})
+		}else{
+			$(this).css({"display":"block"})
+		});
+	*/
+
+	

@@ -20,7 +20,7 @@ function callClickListener(){
 
 var options = {
   strings: ["IT Lösungen", "Suchmaschinenoptimierung", "Webdesign", "Appdesign"],
-  typeSpeed: 300
+  typeSpeed: 200
 }
 
 var typed = new Typed(".typer", options);
