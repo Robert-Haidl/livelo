@@ -8,7 +8,7 @@ function callListener() {
 }
 
 function loadParticles() {
-    particlesJS.load('landing', 'assets/particlesjs-config.json', function () {});
+    particlesJS.load('landing', 'assets/particles-index.json', function () {});
 }
 
 function callClickListener() {
