@@ -47,9 +47,17 @@ html,body {
 
 .page1 {
 	position:relative;
+	background: 
+	linear-gradient(
+		rgba(34, 31, 43, 0.8),
+    rgba(180, 50, 0, 0.6)
+     
+    ),
+	url('../res/images/portfolio.jpg');
+	background-size: cover;
 }
 
-.page1::after {
+/*.page1::after {
 	content: "";
 	background: url('../res/images/portfolio.jpeg');
 	background-size: cover;
@@ -60,7 +68,7 @@ html,body {
 	right: 0;
 	position: absolute;
 	z-index: -1;   
-  }
+  }*/
 
 .page2 {
 	background: url('../res/images/thevips.jpg');
