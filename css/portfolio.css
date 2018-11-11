@@ -55,34 +55,25 @@ html,body {
     ),
 	url('../res/images/portfolio.jpg');
 	background-size: cover;
+	background-position: center;
 }
-
-/*.page1::after {
-	content: "";
-	background: url('../res/images/portfolio.jpeg');
-	background-size: cover;
-	opacity: 0.8;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;   
-  }*/
 
 .page2 {
 	background: url('../res/images/thevips.jpg');
 	background-size: cover;
+	background-position: center;
 }
 
 .page3 {
 	background: url('../res/images/sportenergie.jpg');
 	background-size: cover;
+	background-position: center;
 }
 
 .page4 {
 	background: url('../res/images/betker.jpg');
 	background-size: cover;
+	background-position: center;
 }
 
 .page4 a {
@@ -93,6 +84,7 @@ html,body {
 .page5 {
 	background: url('../res/images/twerion.jpg');
 	background-size: cover;
+	background-position: center;
 }
 
 .rotateCubeTopOut {
