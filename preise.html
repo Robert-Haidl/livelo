@@ -21,13 +21,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/preisrechner.css">
 </head>
 
-<body>                
-           
+<body>
+
     <div id="page-wrapper">
-
-
 
 
         <!-- Header -->
@@ -53,15 +52,155 @@
             </header>
         </section>
 
-        
-        
+        <!-- Main -->
+        <article id="main">
+            <header>
+                <div class="fadeout">
+                    <h2>Preisrechner</h2>
+                    <p>Lassen Sie sich einen ungefähren Preis automatisch kalkulieren!</p>
+                </div>
+            </header>
+            <section class="wrapper style5">
+                <div class="inner">
+                    <h3>Preisrechner</h3>
+
+                    <div id="preisrechner">
+                        <button id="start" class="btnDefault">Starten <i class="fas fa-play-circle"></i></button>
+                        <div class="page" id="page1">
+                            <h2>Was benötigen Sie?</h2>
+                            <div class="pr-item" forward="page2">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-laptop"></i>
+                                    </center>
+                                    <br>
+                                    Webseite
+                                </h3>
+                            </div>
+                            <div class="pr-item">
+                                <h3 class="lh-1" forward="page3">
+                                    <center>
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </center>
+                                    <br>
+                                    App
+                                </h3>
+                            </div>
+                            <div class="pr-item">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="far fa-comments"></i>
+                                    </center>
+                                    <br>
+                                    Anderes
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="page" id="page2">
+                            <h2>Welche Art von Homepage benötigen Sie?</h2>
+                            <div class="pr-item" forward="page4">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-user"></i>
+                                    </center>
+                                    <br>
+                                    Privathomepage
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page4">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-users"></i>
+                                    </center>
+                                    <br>
+                                    Firmenhomepage
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page4">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="far fa-comments"></i>
+                                    </center>
+                                    <br>
+                                    Anderes
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="page" id="page3">
+                            <h2>Welche Art von App benötigen Sie?</h2>
+                            <div class="pr-item">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-user"></i>
+                                    </center>
+                                    <br>
+                                    Privathomepage
+                                </h3>
+                            </div>
+                            <div class="pr-item">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-users"></i>
+                                    </center>
+                                    <br>
+                                    Firmenhomepage
+                                </h3>
+                            </div>
+                            <div class="pr-item">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="far fa-comments"></i>
+                                    </center>
+                                    <br>
+                                    Anderes
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="page" id="page4">
+                            <h2>Haben Sie bereits Designvorstellungen?</h2>
+                            <div class="pr-item" forward="page5">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-check"></i>
+                                    </center>
+                                    <br>
+                                    Ja
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page5">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-ban"></i>
+                                    </center>
+                                    <br>
+                                    Nein
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="page" id="page5"></div>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li><a href="impressum.html" style="border: none;">Impressum</a></li>
+                <li><a href="anfrage.html" style="border: none;">Kontakt</a> </li>
+            </ul>
+        </footer>
+
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/showLoading/js/jquery.showLoading.min.js"></script>
     <script src="js/particles.min.js"></script>
 
-    
+
     <script src="js/jquery.scrollex.min.js"></script>
     <script src="js/jquery.scrolly.min.js"></script>
     <script src="js/skel.min.js"></script>
@@ -71,9 +210,9 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    
+
     <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/preisrechner.js"></script>
 </body>
 
 </html>

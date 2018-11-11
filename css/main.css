@@ -4961,3 +4961,13 @@ body.is-mobile.landing #footer {
 		min-height: 0;
 	}
 }
+
+.btnDefault:hover {
+    transition: all 0.5s !important;
+    color: white !important;
+    background: goldenrod !important;
+}
+
+.lh-1{
+	line-height: 1;
+}

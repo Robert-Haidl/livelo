@@ -1,0 +1,5 @@
+.pr-item{
+    display: inline-block;
+    margin-right: 3em;
+    cursor: pointer;
+}
