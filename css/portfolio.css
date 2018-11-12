@@ -8,7 +8,6 @@ html,body {
 	height: 100%;
 	background-color: #fefefe;
 	font-family: Helvetica, sans-serif;
-	font-size: 16px;
 	color: #fff;
 }
 
@@ -26,19 +25,10 @@ html,body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-size: 4.5em;
 	color: #fff;
 	display: none;
 }
 
-#cubeTransition h2 {
-	position: relative;
-	top: 200px;
-	margin: 0;
-	font-size: 1.5em;
-	text-align: center;
-	text-shadow: 1px 1px 0px rgba( 0, 0, 0, 0.1 );
-}
 
 .visible{
 	display: block !important;
@@ -188,7 +178,6 @@ html,body {
 	right: 24px;
 	margin: 0;
 	z-index: 1;
-	font-size: 0.9em;
 }
 
 .credit a {
@@ -224,30 +213,22 @@ html,body {
 
 /* ------------------------- own css---------------------*/
 
-.letzte {
-	margin-top:-1vw !important;
-	padding: 0px !important;
-	padding-left: 14vw !important;
-	float: left !important;
+.page1 h2{
+	font-size: 3rem;
+	margin: 0.83em;
 }
 
-.projekte{
-	margin-top:-7vw !important;
-	padding: 0px !important;
-	padding-right: 14vw !important;
-	float: right !important;
+.page1 p{
+	text-transform: uppercase;
+	letter-spacing: 0.225em;
+	margin: 0;
+	padding: 0;
 }
 
-.ml10 .text-wrapper {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-  }
-  
-  .ml10 .letter {
-	display: inline-block;
-	line-height: 0.7em;
-	transform-origin: 0 0;
-	color: white;
-	letter-spacing: 3px;
-  }
+.page1 h2, p{
+	margin-top: 18vw;
+}
+
+.page1{
+	text-align: center;
+}
