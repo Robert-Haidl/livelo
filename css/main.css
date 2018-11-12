@@ -3727,7 +3727,6 @@ button1:disabled,
 	background-repeat: no-repeat;
 	background-position: center top;
 	position: relative;
-	background-size: auto 900px;
 	opacity: 1;
 
 
@@ -4686,7 +4685,6 @@ body.is-mobile #main>header {
 	background-repeat: no-repeat;
 	background-position: left top;
 	position: relative;
-	background-size: auto 900px;
 	opacity: 1;
 	background-attachment: fixed;
 
