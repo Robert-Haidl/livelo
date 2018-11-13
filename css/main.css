@@ -4985,3 +4985,10 @@ body.is-mobile.landing #footer {
 	margin-top: 150px;
 	position: absolute;
 }
+.goldenrod-hover{
+	transition: 1s all;
+}
+.goldenrod-hover:hover{
+	transition: 1s all;
+	color: goldenrod !important;
+}
