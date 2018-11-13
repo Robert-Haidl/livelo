@@ -167,11 +167,6 @@ body {
 	width: 60%;
 }
 
-.resizethen{
-	width: 500px;
-	height: auto;
-}
-
 @media screen and (min-width: 980px) {
 
 	.resizethen {
@@ -3377,8 +3372,7 @@ button1:disabled,
 
 .spotlight .image img {
 	border-radius: 0;
-	width: 70%;
-	padding-left: 15%;
+	width: 100%;
 }
 
 .spotlight .content {
