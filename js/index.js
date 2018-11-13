@@ -5,10 +5,6 @@ $(document).ready(function () {
 function callListener() {
     loadParticles();
     callClickListener();
-    let json = {
-      "name": "Hurensohn"
-    }
-    console.log("Hallo: "+json.name);
 }
 
 function loadParticles() {
