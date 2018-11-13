@@ -163,15 +163,6 @@ html,body {
 	cursor: pointer;
 }
 
-#bullets li:hover {
-	background: rgba( 255, 255, 255, 0.8 );
-}
-
-#bullets li.active {
-	cursor: default;
-	background: #fff;
-}
-
 .credit {
 	position: absolute;
 	bottom: 24px;

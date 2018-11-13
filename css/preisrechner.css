@@ -3,3 +3,25 @@
     margin-right: 3em;
     cursor: pointer;
 }
+
+header{
+    background-image: url(../res/images/preis.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fadeout{
+    padding-left: 10%;
+}
+
+.inner{
+    text-align:center;
+}
+
+.page h2{
+    margin-top: 5vw;
+}
+
+#preisrechner{
+    text-align: center;
+}
