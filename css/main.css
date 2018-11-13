@@ -4975,3 +4975,8 @@ body.is-mobile.landing #footer {
 .lh-1{
 	line-height: 1;
 }
+
+#showNavbar{
+	margin-top: 150px;
+	position: absolute;
+}
