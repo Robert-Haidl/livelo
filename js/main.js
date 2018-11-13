@@ -1,107 +1,115 @@
-(function($) {
+(function ($) {
 
 	skel
 		.breakpoints({
-			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
-			medium:	'(max-width: 980px)',
-			small:	'(max-width: 736px)',
-			xsmall:	'(max-width: 480px)'
+			xlarge: '(max-width: 1680px)',
+			large: '(max-width: 1280px)',
+			medium: '(max-width: 980px)',
+			small: '(max-width: 736px)',
+			xsmall: '(max-width: 480px)'
 		});
 
-	$(function() {
+	$(function () {
 
-		var	$window = $(window),
+		var $window = $(window),
 			$body = $('body'),
 			$wrapper = $('#page-wrapper'),
-			$banner = $('#banner'),
+			$banner = $('#showNavbar'),
 			$header = $('#header');
 
 		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+		$body.addClass('is-loading');
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
+		$window.on('load', function () {
+			window.setTimeout(function () {
+				$body.removeClass('is-loading');
+			}, 100);
+		});
 
 		// Mobile?
-			if (skel.vars.mobile)
+		if (skel.vars.mobile)
+			$body.addClass('is-mobile');
+		else
+			skel
+			.on('-medium !medium', function () {
+				$body.removeClass('is-mobile');
+			})
+			.on('+medium', function () {
 				$body.addClass('is-mobile');
-			else
-				skel
-					.on('-medium !medium', function() {
-						$body.removeClass('is-mobile');
-					})
-					.on('+medium', function() {
-						$body.addClass('is-mobile');
-					});
-
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
 			});
 
+		// Fix: Placeholder polyfill.
+		$('form').placeholder();
+
+		// Prioritize "important" elements on medium.
+		skel.on('+medium -medium', function () {
+			$.prioritize(
+				'.important\\28 medium\\29',
+				skel.breakpoint('medium').active
+			);
+		});
+
 		// Scrolly.
-			$('.scrolly')
-				.scrolly({
-					speed: 1500,
-					offset: $header.outerHeight()
-				});
+		$('.scrolly')
+			.scrolly({
+				speed: 1500,
+				offset: $header.outerHeight()
+			});
 
 		// Menu.
-			$('#menu')
-				.append('<a href="#menu" class="close"></a>')
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right',
-					target: $body,
-					visibleClass: 'is-menu-visible'
-				});
+		$('#menu')
+			.append('<a href="#menu" class="close"></a>')
+			.appendTo($body)
+			.panel({
+				delay: 500,
+				hideOnClick: true,
+				hideOnSwipe: true,
+				resetScroll: true,
+				resetForms: true,
+				side: 'right',
+				target: $body,
+				visibleClass: 'is-menu-visible'
+			});
 
-			$(".menuToggle").click(function() {
-					$(".menuToggle").css("display", "none");
-				  });
-				  $(".menuToggle").blur(function() {
-					$(".menuToggle").css("display", "block");
-				  });
+		$(".menuToggle").click(function () {
+			$(".menuToggle").css("display", "none");
+		});
+		$(".menuToggle").blur(function () {
+			$(".menuToggle").css("display", "block");
+		});
 
 		// Fontawesome button
 
-				  $('.fas').scroll(function(){
-					$(this).css("display","none");
-				  });
+		$('.fas').scroll(function () {
+			$(this).css("display", "none");
+		});
 
 
 		// Header.
-			if (skel.vars.IEVersion < 9)
-				$header.removeClass('alt');
+		if (skel.vars.IEVersion < 9)
+			$header.removeClass('alt');
 
-			if ($banner.length > 0
-			&&	$header.hasClass('alt')) {
+		if ($banner.length > 0 &&
+			$header.hasClass('alt')) {
 
-				$window.on('resize', function() { $window.trigger('scroll'); });
+			$window.on('resize', function () {
+				$window.trigger('scroll');
+			});
 
-				$banner.scrollex({
-					bottom:		$header.outerHeight() + 1,
-					terminate:	function() { $header.removeClass('alt'); },
-					enter:		function() { $header.addClass('alt'); },
-					leave:		function() { $header.removeClass('alt'); }
-				});
+			$banner.scrollex({
+				bottom: $header.outerHeight() + 1,
+				terminate: function () {
+					$header.removeClass('alt');
+				},
+				enter: function () {
+					$header.addClass('alt');
+				},
+				leave: function () {
+					$header.removeClass('alt');
+				}
+			});
 
-			}
+		}
 
 	});
 
@@ -112,53 +120,54 @@
 //Animation slogan
 var defaultPadding = 1;
 if (window.matchMedia("(max-width: 600px)").matches) {
-  defaultPadding = 1.5;
+	defaultPadding = 1.5;
 }
 
 if (window.matchMedia("(max-width: 800px)").matches) {
-  defaultPadding = 1.6;
+	defaultPadding = 1.6;
 }
 
 if (window.matchMedia("(max-width: 1050px)").matches) {
-  defaultPadding = 1.65;
+	defaultPadding = 1.65;
 }
 
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.ml5 .line',
-    opacity: [0.5,1],
-    scaleX: [0, 1],
-    easing: "easeInOutExpo",
-    duration: 1000
-  }).add({
-    targets: '.ml5 .line',
-    duration: 700,
-    easing: "easeOutExpo",
-    translateY: function(e, i, l) {
-		var offset = (defaultPadding*-1) + defaultPadding*2*i;
-    return offset + "em";
-    }
-  }).add({
-    targets: '.ml5 .ampersand',
-    opacity: [0,1],
-    scaleY: [0.5, 1],
-    easing: "easeOutExpo",
-    duration: 900,
-    offset: '-=600'
-  }).add({
-    targets: '.ml5 .letters-left',
-    opacity: [0,1],
-    translateX: ["0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 900,
-    offset: '-=700'
-  }).add({
-    targets: '.ml5 .letters-right',
-    opacity: [0,1],
-    translateX: ["-0.5em", 0],
-    easing: "easeOutExpo",
-    duration: 900,
-    offset: '-=700'
-  });
-	
+anime.timeline({
+		loop: false
+	})
+	.add({
+		targets: '.ml5 .line',
+		opacity: [0.5, 1],
+		scaleX: [0, 1],
+		easing: "easeInOutExpo",
+		duration: 1000
+	}).add({
+		targets: '.ml5 .line',
+		duration: 700,
+		easing: "easeOutExpo",
+		translateY: function (e, i, l) {
+			var offset = (defaultPadding * -1) + defaultPadding * 2 * i;
+			return offset + "em";
+		}
+	}).add({
+		targets: '.ml5 .ampersand',
+		opacity: [0, 1],
+		scaleY: [0.5, 1],
+		easing: "easeOutExpo",
+		duration: 900,
+		offset: '-=600'
+	}).add({
+		targets: '.ml5 .letters-left',
+		opacity: [0, 1],
+		translateX: ["0.5em", 0],
+		easing: "easeOutExpo",
+		duration: 900,
+		offset: '-=700'
+	}).add({
+		targets: '.ml5 .letters-right',
+		opacity: [0, 1],
+		translateX: ["-0.5em", 0],
+		easing: "easeOutExpo",
+		duration: 900,
+		offset: '-=700'
+	});

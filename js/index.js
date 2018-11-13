@@ -101,9 +101,3 @@ $( ".menuToggle" ).click(function() {
 $('body').click(function() {
   $(".menuToggle").css('opacity','1');
 });
-
-$('.close a').click(function() {
-  alert('Der Robi ist der allerbeste Sensei');
-});
-
-

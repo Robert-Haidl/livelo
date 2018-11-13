@@ -5,7 +5,14 @@
 
 
     background:
+<<<<<<< HEAD
     linear-gradient(      rgba(39, 50, 100, 0.2),        rgba(43, 52, 61, 0.9)),
+=======
+    linear-gradient(
+    rgba(180, 50, 0, 0.6),
+      rgba(34, 31, 43, 0.9)
+    ),
+>>>>>>> 761839b1dcc23a5b6e74987b85451367bec3c1a6
     url('../res/images/background.jpg');
     
     
@@ -36,6 +43,12 @@
     font-family: 'Righteous';
 }
 
+#livelo_xs{
+    color: lightgray;
+    font-size: 1em;
+    font-family: 'Righteous';
+}
+
 #slogan{
     color: white;
     font-size: 2vw;
@@ -59,9 +72,13 @@
     display: inline-block;
 }
 
-#livelo_e:hover{
-    transition: 1s all ease-in-out;
-    transform: rotateY(-360deg);
+#livelo_e_xs{
+    font-size: 1em;
+    font-family: 'Righteous';
+    background: -webkit-linear-gradient(yellow 35%, orange 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 #more_information{
@@ -332,3 +349,6 @@
     }
 }
 
+.noborder{
+    border: 0;
+}
