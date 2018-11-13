@@ -4163,7 +4163,7 @@ button1:disabled,
 
 #menu ul>li>a:hover{
 	transition: 0.5s;
-	color: orange;
+	color: goldenrod;
 }
 
 @media screen and (max-width: 736px) {
@@ -4345,7 +4345,6 @@ body.is-menu-visible #menu {
 }
 
 /* Banner */
-
 #banner {
 	display: -moz-flex;
 	display: -webkit-flex;
