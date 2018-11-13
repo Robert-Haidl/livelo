@@ -1,21 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Coda|Lobster|Lobster+Two|Righteous|Shrikhand|Titan+One');
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
 
-#landing{ 
+#landing {
 
 
     background:
-<<<<<<< HEAD
-    linear-gradient(      rgba(39, 50, 100, 0.2),        rgba(43, 52, 61, 0.9)),
-=======
-    linear-gradient(
-    rgba(180, 50, 0, 0.6),
-      rgba(34, 31, 43, 0.9)
-    ),
->>>>>>> 761839b1dcc23a5b6e74987b85451367bec3c1a6
-    url('../res/images/background.jpg');
-    
-    
+        linear-gradient(rgba(39, 50, 100, 0.2), rgba(43, 52, 61, 0.9)),
+        url('../res/images/background.jpg');
+
 
     background-position: center;
     background-repeat: no-repeat;
@@ -24,12 +16,12 @@
 }
 
 
-.backgroundrot{
-    height:20vw;
+.backgroundrot {
+    height: 20vw;
     position: relative;
 }
 
-.centered{
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,19 +29,19 @@
     text-align: center;
 }
 
-#livelo{
+#livelo {
     color: lightgray;
     font-size: 15vw;
     font-family: 'Righteous';
 }
 
-#livelo_xs{
+#livelo_xs {
     color: lightgray;
     font-size: 1em;
     font-family: 'Righteous';
 }
 
-#slogan{
+#slogan {
     color: white;
     font-size: 2vw;
     font-family: "Open Sans", Helvetica, sans-serif;
@@ -57,13 +49,13 @@
     line-height: 0;
 }
 
-#line{
+#line {
     margin: 1em;
     width: 55%;
     color: white;
 }
 
-#livelo_e{
+#livelo_e {
     font-size: 15vw;
     font-family: 'Righteous';
     background: -webkit-linear-gradient(yellow 35%, orange 75%);
@@ -72,7 +64,7 @@
     display: inline-block;
 }
 
-#livelo_e_xs{
+#livelo_e_xs {
     font-size: 1em;
     font-family: 'Righteous';
     background: -webkit-linear-gradient(yellow 35%, orange 75%);
@@ -81,7 +73,7 @@
     display: inline-block;
 }
 
-#more_information{
+#more_information {
     cursor: pointer;
     color: lightgray;
     position: fixed;
@@ -92,43 +84,43 @@
 }
 
 .ml5 {
-  position: relative;
-  font-weight: 300;
-  font-size: 4.5em;
-  color: lightgray;
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: lightgray;
 }
 
 .ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding: 1em;
-  line-height: 1em;
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    line-height: 1em;
 }
 
 .ml5 .line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 3px;
-  width: 100%;
-  background-color: lightgray;
-  transform-origin: 0.5 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: lightgray;
+    transform-origin: 0.5 0;
 }
 
 .ml5 .ampersand {
-  margin-right: -0.1em;
-  margin-left: -0.1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
 }
 
 .ml5 .letters {
-  display: inline-block;
-  opacity: 0;
-  color: lightgray;
+    display: inline-block;
+    opacity: 0;
+    color: lightgray;
 }
 
-.typer{
+.typer {
     font-size: 4vw;
     letter-spacing: inherit;
     line-height: 0;
@@ -141,7 +133,7 @@
     display: inline-block;
 }
 
-.dropbtn:hover{
+.dropbtn:hover {
     cursor: pointer;
 }
 
@@ -160,72 +152,75 @@
     text-decoration: none;
     text-decoration-style: none;
     display: block;
-    border:none;
+    border: none;
     letter-spacing: 0.225em;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     margin-left: 40% !important;
     opacity: 0;
     transition: opacity 1.3s ease-in-out;
-  }
+}
 
-  .dropdown-content a:hover{
-      color: white;
-      transition: 0.5s;
-  }
+.dropdown-content a:hover {
+    color: white;
+    transition: 0.5s;
+}
 
-  .dropdown-content i{
-      padding-right: 0.5vw;
-  }
+.dropdown-content i {
+    padding-right: 0.5vw;
+}
 
-  .dropdown-content i, .dropdown-element{
-      display: inline;
-  }
+.dropdown-content i,
+.dropdown-element {
+    display: inline;
+}
 
-  .fa-mobile-alt{
-      margin-right: 0.5vw;
-  }
+.fa-mobile-alt {
+    margin-right: 0.5vw;
+}
 
-  .fa-laptop{
-      margin-left: -0.4vw;
-  }
+.fa-laptop {
+    margin-left: -0.4vw;
+}
 
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+    display: block;
+}
 
 /*------------- MEDIA -----------------------*/
 
-@media(max-width: 1050px){
-    .centered{
+@media(max-width: 1050px) {
+    .centered {
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
     }
-    
-    #livelo{
+
+    #livelo {
         color: lightgray;
         font-size: 16em;
         font-family: 'Righteous';
     }
-    
-    #slogan{
+
+    #slogan {
         color: white;
         font-size: 3em;
         font-family: "Open Sans", Helvetica, sans-serif;
         font-variant: small-caps;
         line-height: 0;
     }
-    
-    #line{
+
+    #line {
         margin: 0.7em;
         width: 55%;
         color: white;
     }
-    
-    #livelo_e{
+
+    #livelo_e {
         font-size: 16em;
         font-family: 'Righteous';
         background: -webkit-linear-gradient(yellow 35%, orange 75%);
@@ -234,49 +229,49 @@
         display: inline-block;
     }
 
-    .text-wrapper{
+    .text-wrapper {
         padding: 0;
         margin: 0;
         line-height: 1.3em;
         margin-top: 0.5em;
     }
-    
-    .arrow_bottom{
+
+    .arrow_bottom {
         font-size: 50px;
         padding-bottom: 70px;
     }
 }
 
-@media (max-width: 800px){
-    .centered{
+@media (max-width: 800px) {
+    .centered {
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
     }
-    
-    #livelo{
+
+    #livelo {
         color: lightgray;
         font-size: 12em;
         font-family: 'Righteous';
     }
-    
-    #slogan{
+
+    #slogan {
         color: white;
         font-size: 2.5em;
         font-family: "Open Sans", Helvetica, sans-serif;
         font-variant: small-caps;
         line-height: 0;
     }
-    
-    #line{
+
+    #line {
         margin: 0.7em;
         width: 55%;
         color: white;
     }
-    
-    #livelo_e{
+
+    #livelo_e {
         font-size: 12em;
         font-family: 'Righteous';
         background: -webkit-linear-gradient(yellow 35%, orange 75%);
@@ -285,49 +280,49 @@
         display: inline-block;
     }
 
-    .text-wrapper{
+    .text-wrapper {
         padding: 0;
         margin: 0;
         line-height: 1.3em;
         margin-top: 0.5em;
     }
 
-    .arrow_bottom{
+    .arrow_bottom {
         font-size: 40px;
         padding-bottom: 50px;
     }
 }
 
-@media (max-width: 600px){
-    .centered{
+@media (max-width: 600px) {
+    .centered {
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
     }
-    
-    #livelo{
+
+    #livelo {
         color: lightgray;
         font-size: 7em;
         font-family: 'Righteous';
     }
-    
-    #slogan{
+
+    #slogan {
         color: white;
         font-size: 1.4em;
         font-family: "Open Sans", Helvetica, sans-serif;
         font-variant: small-caps;
         line-height: 0;
     }
-    
-    #line{
+
+    #line {
         margin: 0.7em;
         width: 55%;
         color: white;
     }
-    
-    #livelo_e{
+
+    #livelo_e {
         font-size: 7em;
         font-family: 'Righteous';
         background: -webkit-linear-gradient(yellow 35%, orange 75%);
@@ -336,19 +331,19 @@
         display: inline-block;
     }
 
-    .text-wrapper{
+    .text-wrapper {
         padding: 0;
         margin: 0;
         line-height: 1.3em;
         margin-top: 0.5em;
     }
 
-    .arrow_bottom{
+    .arrow_bottom {
         font-size: 30px;
         padding-bottom: 25px;
     }
 }
 
-.noborder{
+.noborder {
     border: 0;
 }
