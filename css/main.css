@@ -3379,6 +3379,7 @@ button1:disabled,
 	border-radius: 0;
 	width: 55%;
 	margin-left: 20%;
+	height: 100%;
 }
 
 .spotlight .content {
@@ -3476,7 +3477,7 @@ button1:disabled,
 @media screen and (max-width: 736px) {
 
 	.spotlight .content {
-		padding: 3em 2em 1em 2em;
+		padding: 0em 2em 1em 2em;
 	}
 
 }
@@ -4969,6 +4970,11 @@ body.is-mobile.landing #footer {
 		background-attachment: scroll;
 		min-height: 0;
 	}
+
+	.menuToggle span{
+		font-size: 1.5em;
+	}
+
 }
 
 .btnDefault:hover {
@@ -4991,4 +4997,8 @@ body.is-mobile.landing #footer {
 .goldenrod-hover:hover{
 	transition: 1s all;
 	color: goldenrod !important;
+}
+
+.text-white{
+	color: white;
 }
