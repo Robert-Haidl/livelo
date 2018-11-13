@@ -39,6 +39,12 @@
     font-family: 'Righteous';
 }
 
+#livelo_xs{
+    color: lightgray;
+    font-size: 1em;
+    font-family: 'Righteous';
+}
+
 #slogan{
     color: white;
     font-size: 2vw;
@@ -62,9 +68,13 @@
     display: inline-block;
 }
 
-#livelo_e:hover{
-    transition: 1s all ease-in-out;
-    transform: rotateY(-360deg);
+#livelo_e_xs{
+    font-size: 1em;
+    font-family: 'Righteous';
+    background: -webkit-linear-gradient(yellow 35%, orange 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 #more_information{
@@ -335,3 +345,6 @@
     }
 }
 
+.noborder{
+    border: 0;
+}
