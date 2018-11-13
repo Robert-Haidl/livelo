@@ -1,0 +1,56 @@
+#main>header {
+	padding: 12em 0 10em 0;
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/background-code.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/background-code.jpg");
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/background-code.jpg");
+	background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/background-code.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.creator-container{
+	display: inline-block;
+	max-width: 250px;
+	text-align: center;
+	margin: 1em;
+}
+
+.creator-container img{
+	width: 200px;
+}
+.creator-container h2{
+	margin: 0;
+}
+
+.creator-container h4{
+	font-weight: 100;
+}
+
+.creator-container p{
+	text-align: justify;
+}
+
+.symbol-container{
+	display: inline-block;
+	max-width: 250px;
+	text-align: center;
+	margin: 1em;
+}
+
+.symbol-container p{
+	text-align: justify;
+}
+
+.symbol{
+	font-size: 2.5em;
+	padding: .4em;
+	color: goldenrod;
+}
+
+.features-container{
+	text-align: center;
+}
+
