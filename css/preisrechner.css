@@ -18,11 +18,12 @@
 }
 
 .fadeout{
-    padding-left: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .inner{
-    text-align:center;
+	text-align:center;
 }
 
 .page h2{
@@ -31,4 +32,19 @@
 
 #preisrechner{
     text-align: center;
+}
+
+#start{
+	
+}
+
+@keyframes move {
+	to {
+		margin-left: 300%;
+	}
+  }
+
+@keyframes fade{
+	from{opacity: 1;}
+	to{opacity: 0;}
 }

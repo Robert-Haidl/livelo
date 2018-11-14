@@ -191,6 +191,9 @@
     display: block;
 }
 
+#resizethen{
+    width: 65%;
+}
 /*------------- MEDIA -----------------------*/
 
 @media(max-width: 1050px) {
@@ -370,3 +373,4 @@
 .noborder {
     border: 0;
 }
+

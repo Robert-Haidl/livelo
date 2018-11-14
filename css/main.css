@@ -168,8 +168,9 @@ body {
 }
 
 .resizethen{
-	width: 500px;
+	width: 600px;
 	height: auto;
+	padding-left: 1%;
 }
 
 @media screen and (min-width: 980px) {
@@ -3378,7 +3379,7 @@ button1:disabled,
 .spotlight .image img {
 	border-radius: 0;
 	width: 55%;
-	margin-left: 20%;
+	margin-left: 15%;
 	height: 100%;
 }
 
@@ -3443,6 +3444,7 @@ button1:disabled,
 
 	.spotlight .image {
 		width: 45%;
+		padding-left: 3%;
 	}
 
 	.spotlight .content {
@@ -3906,6 +3908,7 @@ button1:disabled,
 .wrapper.style5 {
 	background-color: #ffffff;
 	color: #4E4852;
+	height: 400px;
 }
 
 .wrapper.style5 strong,
@@ -5001,4 +5004,8 @@ body.is-mobile.landing #footer {
 
 .text-white{
 	color: white;
+}
+
+.fa-laptop:before{
+	margin-right: -0.5vh !important;
 }
