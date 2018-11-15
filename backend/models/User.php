@@ -21,14 +21,27 @@ class User{
         return substr($uid, 0, $len);
     }
 
-   public function sendMail(){
+   public function sendBookingMailToCustomer($data){
         $mailer = new Mailer();
-        if($mailer->sendActivationMail($data)){
-            $this->setResult("OK");
+        if($mailer->sendBookingMailToCustomer($data)){
             return true;
         }else{
             return false;
         }
+    }
+
+    public function sendBookingMailToAdmin($data){
+        return true;
+    }
+
+    public function sendBookingRequest($data){
+        if($this->sendBookingMailToCustomer($data)){
+            if($this->sendBookingMailToAdmin($data)){
+                $this->setResult("OK");
+                return true;
+            }
+        }
+        return false;
     }
 
     public function setResult($message){
