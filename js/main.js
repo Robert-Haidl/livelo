@@ -180,11 +180,12 @@ anime.timeline({
 		  $(this).css('opacity','0');
 		});
 
-		
+		$(document).click(function(event){
+			$(".menuToggle").css('opacity','1');
+		  });
 
-		  $(document).click(function(event){
-			  var text = $(event.target);
-			  console.log(text);
+		  $("a.close").click(function(event){
+			$(".menuToggle").css('opacity','1');
 		  });
 		  
 	function dropdown() {
