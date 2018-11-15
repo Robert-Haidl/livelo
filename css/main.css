@@ -3908,7 +3908,6 @@ button1:disabled,
 .wrapper.style5 {
 	background-color: #ffffff;
 	color: #4E4852;
-	height: 400px;
 }
 
 .wrapper.style5 strong,
@@ -5008,4 +5007,20 @@ body.is-mobile.landing #footer {
 
 .fa-laptop:before{
 	margin-right: -0.5vh !important;
+}
+
+.max-400{
+	max-width: 400px;
+}
+.max-600{
+	max-width: 600px;
+}
+.max-900{
+	max-width: 900px;
+}
+.max-300{
+	max-width: 300px;
+}
+.max-200{
+	max-width: 200px;
 }

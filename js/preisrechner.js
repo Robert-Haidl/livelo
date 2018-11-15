@@ -15,8 +15,9 @@ function callClickListener(){
             $(this).css('margin-top','-200px');
             $(this).css('animation','move 2.5s');
             $(this).css('animation-delay','1s');
-
             setTimeout(() => {
+                $(".wrapper").css("padding", "2em 0 4em 0");
+                $("#preisrechner-title").hide();
                 $("#page1").fadeIn();
                 $("#start").hide();
             }, 2500);
