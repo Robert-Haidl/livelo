@@ -27,27 +27,25 @@ class Mailer{
             //Server settings
             $mail->SMTPDebug = 0;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'ws21.inname.net';  // Specify main and backup SMTP servers
+            $mail->Host = 'vweb17.nitrado.net';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'no-reply@shopwg.at';                 // SMTP username
-            $mail->Password = 'I0cg59q$';                           // SMTP password
+            $mail->Username = 'contact@livelo.at';                 // SMTP username
+            $mail->Password = 'dfdb4432';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
             $mail->CharSet = "UTF-8";
             //Recipients
-            $mail->setFrom('no-reply@shopwg.at', 'ShopWG');
+            $mail->setFrom('contact@livelo.at', 'Livelo');
             $mail->addAddress($email, $firstname.' '.$lastname);     // Add a recipient
-            $mail->addReplyTo('support@shopwg.at', 'Support ShopWG');
+            $mail->addReplyTo('contact@livelo.at', 'Livelo');
 
             $mail->isHTML(true);                                   // Set email format to HTML
-            $mail->Subject = 'Aktivierung ShopWG';
-            $mail->Body    = '<center style="background-color: rgba(200, 50, 50, 0.2); padding: 35px; border-radius: 50px;">'
-            .'<div style="max-width: 400px; background-color: white; padding: 35px; border-radius: 50px;">'
+            $mail->Subject = 'Danke für Ihre Anfrage!';
+            $mail->Body    = '<center style="background-color: lightgray; padding: 50px;">'
+            .'<div style="max-width: 400px; background-color: white; padding: 35px;">'
             .'<img src="https://shopwg.at/images/logo.png" style="max-width: 300px; width: 100%;">'
             .'<br>'
-            .'<h2>Danke, '.$firstname.' '.$lastname.', dass du dich bei uns registriert hast.</h2>'
-            .'<h3 style="font-weight: normal">Bitte klicke auf folgenden Link, um deinen Account freizuschalten!</h3>'
-            .'<a href="https://shopwg.at/activate.php?hash='.$hash.'&email='.$email.'"><button style="background: rgb(181, 50, 50); color: white; font-size: 20px; border: none; padding: 10px; border-radius: 10px; cursor: pointer;">Aktivierung</button></a>'
+            .'<h3>Danke, '.$firstname.' '.$lastname.', dass du an uns interessiert bist!</h3>'
             .'<br>'
             .'<br>'
             .'<a href="https://shopwg.at/activate.php?hash='.$hash.'&email='.$email.'">'
