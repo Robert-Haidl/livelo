@@ -3332,22 +3332,25 @@ button1:disabled,
 
 	.test4 {
 		width: 100%;
-		margin-bottom: 35px;
+		border-bottom: 1px solid white;
+		padding-top: 1em;
 	}
 
 	.test5 {
 		width: 100%;
-		margin-bottom: 35px;
+		border-bottom: 1px solid white;
+		padding-top: 1em;
 	}
 
 	.test6 {
 		width: 100%;
-		margin-bottom: 35px;
+		border-bottom: 1px solid white;
+		padding-top: 1em;
 	}
 
 	.test7 {
 		width: 100%;
-		margin-bottom: 35px;
+		padding-top: 1em;
 	}
 
 }
