@@ -4289,7 +4289,7 @@ body.is-menu-visible #menu {
 	border: 0;
 	color: #fff;
 	display: block;
-	font-size: 0.8em;
+	font-size: 1em;
 	letter-spacing: 0.225em;
 	padding: 0 1.5em;
 	text-transform: uppercase;
@@ -4298,17 +4298,6 @@ body.is-menu-visible #menu {
 #header nav>ul>li>a.menuToggle {
 	outline: 0;
 	position: relative;
-}
-
-#header nav>ul>li>a.menuToggle:after {
-	background-image: url("../res/images/bars.svg");
-	background-position: right center;
-	background-repeat: no-repeat;
-	content: '';
-	display: inline-block;
-	height: 3.75em;
-	vertical-align: top;
-	width: 2em;
 }
 
 @media screen and (max-width: 736px) {
