@@ -4971,6 +4971,10 @@ body.is-mobile.landing #footer {
 
 }
 
+.weight-100{
+	font-weight: 100;
+}
+
 .no-border {
 	border: 0;
 }

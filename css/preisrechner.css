@@ -1,6 +1,6 @@
-.pr-item{
-    display: inline-block;
-    margin: 3em;
+.pr-item {
+	display: inline-block;
+	margin: 1em;
 	cursor: pointer;
 }
 
@@ -17,30 +17,44 @@
 	text-align: center;
 }
 
-.fadeout{
+.fadeout {
 	padding-left: 5%;
 	padding-right: 5%;
 }
 
-.inner{
-	text-align:center;
+.inner {
+	text-align: center;
 }
 
-.page h2{
-    margin-top: 5vw;
+.page h2 {
+	margin-top: 5vw;
 }
 
-#preisrechner{
-    text-align: center;
+.page h3,
+.page h4 {
+	font-weight: 100;
+}
+
+#preisrechner {
+	text-align: center;
 }
 
 @keyframes move {
 	to {
 		margin-left: 300%;
 	}
-  }
+}
 
-@keyframes fade{
-	from{opacity: 1;}
-	to{opacity: 0;}
+@keyframes fade {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+.pr-item h3 {
+	font-weight: 100;
 }

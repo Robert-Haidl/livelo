@@ -32,7 +32,7 @@ function callClickListener() {
         $("#" + page).fadeIn();
         let item_price = $(this).attr("extraCost");
         price += parseInt(item_price);
-        $("#price").text(""+price);
+        $("#price").text(""+price+" €");
     });
 }
 
