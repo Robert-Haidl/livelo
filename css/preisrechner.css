@@ -1,7 +1,7 @@
 .pr-item{
     display: inline-block;
-    margin-right: 3em;
-    cursor: pointer;
+    margin: 3em;
+	cursor: pointer;
 }
 
 #main>header {
