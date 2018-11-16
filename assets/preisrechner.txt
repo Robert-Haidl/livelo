@@ -1,23 +1,52 @@
-Was benötigen Sie?
-Homepage/Website
-App
-Sonstiges
+Was benÃ¶tigen Sie? page1
+Homepage/Website (500) -> page2
+App (1000) -> page3
+Sonstiges -> Weiterleitung zu Anfrage
 
-HOMEPAGE:
-Welche Art von Homepage benötigen Sie?
-Privathompage
-Firmenhomepage
-Sonstiges
+HOMEPAGE: page2 -> page4
+Welche Art von Homepage benÃ¶tigen Sie?
+Privathompage (+0)
+Firmenhomepage (+0)
+Sonstiges (+0)
 
-Wie soll die Homepage designet werden?
-Schlicht (i)
-Modern (i)
+APP: page3 -> page6
+Welche Art von App benÃ¶tigen Sie?
+Privatapp (+0)
+Firmenapp (+0)
+Sonstiges (+0)
 
-Benötigen Sie Ihre Webseite designet?
+HOMEPAGE: page4 -> page5
+Wieviele Unterseiten hat Ihre Webseite?
+1 (+0)
+2-3 (+150)
+3-5 (+300)
+5+ (+500)
+
+HOMEPAGE: page5 -> page6
+MÃ¶chten Sie Ihre Webseite spÃ¤ter selber bearbeiten kÃ¶nnen?
+Ja (+150â‚¬)
+Nein (+0)
+
+APP und HOMEPAGE: page6 -> page7
+Haben Sie bereits konkrete Designvorstellungen?
+Ja (+0)
+Nein (+150)
+
+BenÃ¶tigen Sie ein Logo dazu? page7 -> page8
+Ja (+200)
+Nein (+0)
+
+BenÃ¶tigen Sie eine Suchmaschinenoptimierung? (inklusive Google Analytics und Google MyBusiness)
+Ja (+150)
+Nein (+0)
+
+
+
+BenÃ¶tigen Sie Ihre Webseite designet?
 Haben Sie bereits einen konkreten Designwunsch/vorstellungen?
-Möchten Sie Ihre Daten später selber verwalten oder sollen wir das für Sie übernehmen?
-Möchten Sie Ihre Webseite in Google eingetragen bekommen?
-Möchten Sie bei GoogleMyBusiness eingetragen werden?
+MÃ¶chten Sie Ihre Daten spÃ¤ter selber verwalten oder sollen wir das fÃ¼r Sie Ã¼bernehmen?
+MÃ¶chten Sie Ihre Webseite in Google eingetragen bekommen?
+MÃ¶chten Sie bei GoogleMyBusiness eingetragen werden?
 
-Was benötigen Sie?
-Homepage
+Features:
+Kontaktformular, Bildergallerie, SEO, Social Media

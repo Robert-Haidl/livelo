@@ -7,6 +7,8 @@ function callListener() {
     callClickListener();
 }
 
+var price = 0;
+
 function callClickListener() {
     $("#start").on("click", function () {
         $('#preisrechner-title').css('animation', 'fade 0.5s');
@@ -27,6 +29,9 @@ function callClickListener() {
         let page = $(this).attr("forward");
         hideAllPages();
         $("#" + page).fadeIn();
+        let item_price = $(this).attr("extraCost");
+        price += parseInt(item_price);
+        $("#price").text(""+price);
     });
 }
 
