@@ -167,7 +167,7 @@ body {
 	width: 60%;
 }
 
-.resizethen{
+.resizethen {
 	width: 600px;
 	height: auto;
 	padding-left: 1%;
@@ -3697,7 +3697,7 @@ button1:disabled,
 
 
 	.wrapper.style1 {
-	
+
 		width: 100%;
 		height: 100%;
 		background-size: cover;
@@ -4134,8 +4134,8 @@ button1:disabled,
 	width: 20em;
 	z-index: 10002;
 	display: flex;
- 	justify-content: center;
-  	flex-direction: column;
+	justify-content: center;
+	flex-direction: column;
 }
 
 #menu ul {
@@ -4167,7 +4167,7 @@ button1:disabled,
 	text-transform: uppercase;
 }
 
-#menu ul>li>a:hover{
+#menu ul>li>a:hover {
 	transition: 0.5s;
 	color: goldenrod;
 }
@@ -4255,7 +4255,7 @@ body.is-menu-visible #menu {
 	text-transform: none;
 }
 
-#header .nav-text a:hover{
+#header .nav-text a:hover {
 	text-decoration: none;
 	border: 0;
 }
@@ -4965,58 +4965,68 @@ body.is-mobile.landing #footer {
 		min-height: 0;
 	}
 
-	.menuToggle span{
+	.menuToggle span {
 		font-size: 1.5em;
 	}
 
 }
 
-.btnDefault:hover {
-    transition: all 0.5s !important;
-    color: white !important;
-    background: goldenrod !important;
+.no-border {
+	border: 0;
 }
 
-.lh-1{
+.btnDefault:hover {
+	transition: all 0.5s !important;
+	color: white !important;
+	background: goldenrod !important;
+}
+
+.lh-1 {
 	line-height: 1;
 }
 
-#showNavbar{
+#showNavbar {
 	margin-top: 150px;
 	position: absolute;
 }
-.goldenrod-hover{
+
+.goldenrod-hover {
 	transition: 1s all;
 }
-.goldenrod-hover:hover{
+
+.goldenrod-hover:hover {
 	transition: 1s all;
 	color: goldenrod !important;
 }
 
-.text-white{
+.text-white {
 	color: white;
 }
 
-.fa-laptop:before{
+.fa-laptop:before {
 	margin-right: -0.5vh !important;
 }
 
-.max-400{
+.max-400 {
 	max-width: 400px;
 }
-.max-600{
+
+.max-600 {
 	max-width: 600px;
 }
-.max-900{
+
+.max-900 {
 	max-width: 900px;
 }
-.max-300{
+
+.max-300 {
 	max-width: 300px;
 }
-.max-200{
+
+.max-200 {
 	max-width: 200px;
 }
 
-.menuToggle:hover{
+.menuToggle:hover {
 	text-decoration: none;
 }

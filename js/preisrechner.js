@@ -27,6 +27,7 @@ function callClickListener() {
 
     $(".pr-item").on("click", function () {
         let page = $(this).attr("forward");
+        console.log(page);
         hideAllPages();
         $("#" + page).fadeIn();
         let item_price = $(this).attr("extraCost");
