@@ -117,6 +117,32 @@
 
 })(jQuery);
 
+var loading = false;
+function toggleLoading() {
+	if (loading == false) {
+		loading = true;
+		$("body").showLoading();
+	} else {
+		loading = false;
+		$("body").hideLoading();
+	}
+}
+
+function showSuccessMessage(message){
+	swal(
+		'Erfolgreich!',
+		''+message,
+		'success'
+	  )
+}
+
+function showErrorMessage(message){
+	swal(
+		'Fehler!',
+		''+message,
+		'error'
+	  )
+}
 
 
 //Animation slogan

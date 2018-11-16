@@ -80,10 +80,11 @@
 
                     <div id="preisrechner">
                         <button id="start" class="btnDefault">Starten<i class="fas fa-play-circle"></i></button>
+
                         <div class="page" id="page1">
                             <h2>Was benötigen Sie?</h2>
-                            <div class="pr-item" forward="page2">
-                                <h3 class="lh-1 nachrechts">
+                            <div class="pr-item" forward="page2" extraCost="500">
+                                <h3 class="lh-1">
                                     <center>
                                         <i class="fas fa-laptop"></i>
                                     </center>
@@ -91,8 +92,9 @@
                                     Webseite
                                 </h3>
                             </div>
+
                             <div class="pr-item">
-                                <h3 class="lh-1" forward="page3">
+                                <h3 class="lh-1" forward="page3" extraCost="1000">
                                     <center>
                                         <i class="fas fa-mobile-alt"></i>
                                     </center>
@@ -101,7 +103,7 @@
                                 </h3>
                             </div>
                             <div class="pr-item">
-                                <h3 class="lh-1">
+                                <h3 class="lh-1" forward="anfrage">
                                     <center>
                                         <i class="far fa-comments"></i>
                                     </center>
@@ -110,9 +112,10 @@
                                 </h3>
                             </div>
                         </div>
+
                         <div class="page" id="page2">
                             <h2>Welche Art von Homepage benötigen Sie?</h2>
-                            <div class="pr-item" forward="page4">
+                            <div class="pr-item" forward="page4" extraCost="0">
                                 <h3 class="lh-1">
                                     <center>
                                         <i class="fas fa-user"></i>
@@ -121,7 +124,7 @@
                                     Privathomepage
                                 </h3>
                             </div>
-                            <div class="pr-item" forward="page4">
+                            <div class="pr-item" forward="page4" extraCost="0">
                                 <h3 class="lh-1">
                                     <center>
                                         <i class="fas fa-users"></i>
@@ -130,7 +133,7 @@
                                     Firmenhomepage
                                 </h3>
                             </div>
-                            <div class="pr-item" forward="page4">
+                            <div class="pr-item" forward="page4" extraCost="0">
                                 <h3 class="lh-1">
                                     <center>
                                         <i class="far fa-comments"></i>
@@ -140,10 +143,11 @@
                                 </h3>
                             </div>
                         </div>
+
                         <div class="page" id="page3">
                             <h2>Welche Art von App benötigen Sie?</h2>
                             <div class="pr-item">
-                                <h3 class="lh-1">
+                                <h3 class="lh-1" forward="page6" extraCost="0">
                                     <center>
                                         <i class="fas fa-user"></i>
                                     </center>
@@ -152,7 +156,7 @@
                                 </h3>
                             </div>
                             <div class="pr-item">
-                                <h3 class="lh-1">
+                                <h3 class="lh-1" forward="page6" extraCost="0">
                                     <center>
                                         <i class="fas fa-users"></i>
                                     </center>
@@ -160,8 +164,8 @@
                                     Firmenhomepage
                                 </h3>
                             </div>
-                            <div class="pr-item">
-                                <h3 class="lh-1">
+                            <div class="pr-item" extraCost="0">
+                                <h3 class="lh-1" forward="page6" extraCost="0">
                                     <center>
                                         <i class="far fa-comments"></i>
                                     </center>
@@ -170,9 +174,50 @@
                                 </h3>
                             </div>
                         </div>
+
                         <div class="page" id="page4">
-                            <h2>Haben Sie bereits Designvorstellungen?</h2>
-                            <div class="pr-item" forward="page5">
+                            <h2>Wieviele Unterseiten hat Ihre Webseite?</h2>
+                            <div class="pr-item" forward="page5" extraCost="0">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-check"></i>
+                                    </center>
+                                    <br>
+                                    1
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page5" extraCost="150">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-ban"></i>
+                                    </center>
+                                    <br>
+                                    2-3
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page5" extraCost="300">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-ban"></i>
+                                    </center>
+                                    <br>
+                                    4-5
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page5" extraCost="500">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-ban"></i>
+                                    </center>
+                                    <br>
+                                    5+
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="page" id="page5">
+                            <h2>Möchten Sie Ihre Webseite später selber bearbeiten können?</h2>
+                            <div class="pr-item" forward="page6" extraCost="150">
                                 <h3 class="lh-1">
                                     <center>
                                         <i class="fas fa-check"></i>
@@ -181,7 +226,7 @@
                                     Ja
                                 </h3>
                             </div>
-                            <div class="pr-item" forward="page5">
+                            <div class="pr-item" forward="page6" extraCost="0">
                                 <h3 class="lh-1">
                                     <center>
                                         <i class="fas fa-ban"></i>
@@ -191,7 +236,92 @@
                                 </h3>
                             </div>
                         </div>
-                        <div class="page" id="page5"></div>
+
+                        <div class="page" id="page6">
+                            <h2>Haben Sie bereits konktrete Designvorstellungen?</h2>
+                            <div class="pr-item" forward="page7" extraCost="0">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-check"></i>
+                                    </center>
+                                    <br>
+                                    Ja
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page7" extraCost="150">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-ban"></i>
+                                    </center>
+                                    <br>
+                                    Nein
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="page" id="page7">
+                            <h2>Benötigen Sie ein Logo dazu?</h2>
+                            <div class="pr-item" forward="page8" extraCost="200">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-check"></i>
+                                    </center>
+                                    <br>
+                                    Ja
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="page8" extraCost="0">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-ban"></i>
+                                    </center>
+                                    <br>
+                                    Nein
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="page" id="page8">
+                            <h2>Benötigen Sie eine Suchmaschinenoptimierng?</h2>
+                            <div class="pr-item" forward="finish" extraCost="200">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-check"></i>
+                                    </center>
+                                    <br>
+                                    Ja
+                                </h3>
+                            </div>
+                            <div class="pr-item" forward="finish" extraCost="0">
+                                <h3 class="lh-1">
+                                    <center>
+                                        <i class="fas fa-ban"></i>
+                                    </center>
+                                    <br>
+                                    Nein
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div class="page" id="finish">
+                            <h2>Ungefährer Kostenvoranschlag</h2>
+                            <h3 id="price">/</h3>
+                            <h4>Es handelt sich hier um keinen Fixpreis, sondern nur um einen Richtwert.
+                                <br>
+                                Bitte senden Sie uns eine Kontaktanfrage um mit uns in Kontakt zu treten.
+                            </h4>
+                            <a href="anfrage.html">
+                                <button id="start" class="btnDefault"><i class="far fa-envelope"></i> Kontaktanfrage</i></button>
+                            </a>
+                        </div>
+
+                        <div class="page" id="anfrage">
+                            <h2>Wir können Ihnen leider keinen ungefähren Preis nennen.</h2>
+                            <p>Unser Preiskalkulator kalkuliert derzeit nur Preise für mobile Apps und Webseiten. Wir programmieren aber auch diverse andere Programme. (z.B. Ticketing Systeme)
+                                <br>
+                                Senden Sie uns eine Anfrage und wir werden Ihnen einen unverbindlichen Kostenvoranschlag zukommen lassen.</p>
+                        </div>
+
                     </div>
                     <p class="m-5">Der Preisrechner dient dazu, um Ihnen einen ungefähren Preis für unsere Leistungen
                         darzustellen.

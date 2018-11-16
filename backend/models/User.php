@@ -31,12 +31,17 @@ class User{
     }
 
     public function sendBookingMailToAdmin($data){
-        return true;
+        $mailer = new Mailer();
+        if($mailer->sendBookingMailToAdmin($data)){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public function sendBookingRequest($data){
-        if($this->sendBookingMailToCustomer($data)){
-            if($this->sendBookingMailToAdmin($data)){
+        if($this->sendBookingMailToAdmin($data)){
+            if($this->sendBookingMailToCustomer($data)){
                 $this->setResult("OK");
                 return true;
             }
