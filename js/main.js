@@ -57,6 +57,7 @@
 			});
 
 		// Menu.
+
 		$('#menu')
 			.append('<a href="#menu" class="close"></a>')
 			.appendTo($body)
@@ -69,15 +70,16 @@
 				side: 'right',
 				target: $body,
 				visibleClass: 'is-menu-visible'
-			});
+			})
 
-		$(".menuToggle").click(function () {
-			$(".menuToggle").css("display", "none");
-		});
-		$(".menuToggle").blur(function () {
-			$(".menuToggle").css("display", "block");
-		});
-
+		$(".close").click(function(menuAppears){
+				$(".menuToggle").css('opacity','1');
+			  });
+		
+		$('body').click(function(x){
+			$(".menuToggle").css('opacity','1');
+			  });
+			  
 		// Fontawesome button
 
 		$('.fas').scroll(function () {
@@ -180,13 +182,7 @@ anime.timeline({
 		  $(this).css('opacity','0');
 		});
 
-		$(document).click(function(event){
-			$(".menuToggle").css('opacity','1');
-		  });
-
-		  $("a.close").click(function(event){
-			$(".menuToggle").css('opacity','1');
-		  });
+		
 		  
 	function dropdown() {
   document.getElementById("myDropdown").classList.toggle("show");

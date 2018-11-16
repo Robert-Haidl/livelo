@@ -5016,3 +5016,7 @@ body.is-mobile.landing #footer {
 .max-200{
 	max-width: 200px;
 }
+
+.menuToggle:hover{
+	text-decoration: none;
+}
