@@ -28,19 +28,8 @@ class AppController{
         $creationSucessfull = $this->createInstallation("user");
         if($creationSucessfull){
             switch ($action) {
-                case "create":
-                    if($this->installation->create($data)){
-                    }else{
-                        $this->displayErrorMessage();
-                        return;
-                    }
-                    break;
-                case "sendActivationMail":
-                    if($this->mailer->sendActivationMail($data)){
-                        $tempArray = array();
-                        $tempArray["status"] = "OK";
-                        $this->displayMessage($tempArray);
-                        return;
+                case "sendBookingRequest":
+                    if($this->installation->sendBookingRequest($data)){
                     }else{
                         $this->displayErrorMessage();
                         return;
