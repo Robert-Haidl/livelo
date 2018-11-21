@@ -13,7 +13,7 @@ function callClickListener() {
     $("#start").on("click", function () {
         $('#preisrechner-title').css('animation', 'fade 0.5s');
         $('#preisrechner-title').css('opacity', '0');
-        $(this).css('transform', 'scale(2)');
+        $(this).css('transform', 'scale(1.6)');
         $(this).css('margin-top', '-200px');
         $(this).css('animation', 'move 2s');
         $(this).css('animation-delay', '1s');

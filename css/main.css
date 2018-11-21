@@ -3501,7 +3501,7 @@ button1:disabled,
 @media screen and (max-width: 1280px) {
 
 	.wrapper>.inner {
-		width: 90%;
+		width: 70%;
 	}
 
 }
@@ -4307,6 +4307,7 @@ body.is-menu-visible #menu {
 
 	#header nav>ul>li>a.menuToggle {
 		padding: 0 1.5em;
+		margin-top: 2px;
 	}
 
 	#header nav>ul>li>a.menuToggle span {
@@ -4967,6 +4968,7 @@ body.is-mobile.landing #footer {
 
 	.menuToggle span {
 		font-size: 1.5em;
+		margin-right: -10px;
 	}
 
 }
