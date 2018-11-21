@@ -68,5 +68,9 @@ $('a[href*="#"]')
   });
 
 
+  $('.home').click(function(y){
+    $(".menuToggle").css('opacity','1');
+      });
+
 
 
