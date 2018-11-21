@@ -98,7 +98,7 @@ class Mailer{
             $mail->Host = 'vweb17.nitrado.net';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'contact@livelo.at';                 // SMTP username
-            $mail->Password = 'dfdb4432';                           // SMTP password
+            $mail->Password = 'password';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 25;                                    // TCP port to connect to
             $mail->CharSet = "UTF-8";
