@@ -5036,3 +5036,7 @@ body.is-mobile.landing #footer {
 .menuToggle:hover {
 	text-decoration: none;
 }
+
+#footer{
+	padding-left: 1%;
+}
