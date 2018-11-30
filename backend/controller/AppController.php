@@ -35,6 +35,13 @@ class AppController{
                         return;
                     }
                     break;
+                case "sendFragenkatalog":
+                    if($this->installation->sendFragenkatalog($data)){
+                    }else{
+                        $this->displayErrorMessage();
+                        return;
+                    }
+                    break;
                 default:
                     $this->displayErrorMessage();
                     break;
