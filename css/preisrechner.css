@@ -15,6 +15,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
+	transform: skewY(5deg);
+}
+
+.fadeout{
+	transform: skewY(-5deg);
+}
 }
 
 .fadeout {
@@ -39,11 +45,6 @@
 	text-align: center;
 }
 
-@keyframes move {
-	to {
-		margin-left: 300%;
-	}
-}
 
 @keyframes fade {
 	from {
@@ -64,32 +65,15 @@
 	padding-bottom: 1vw;
 }
 
-.contact{
-	text-align: center;
-	border: solid 1px black;
-	border-radius: 3px;
-	padding: 1vw;
-	margin-top: 5vw;
-	color: white;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/preis.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
-	padding:5px;
-}
-
-.inner{
-	text-align: center;
-}
-
 #start{
 	margin-bottom: 3vw;
 	font-size: 18px;
 }
 
+.kostenvoranschlag{
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
 
 .symbol{
     font-size: 16px;
@@ -98,4 +82,42 @@
 
 .icon:hover{
     color: goldenrod;
+}
+
+.m-4, h3{
+	float: left;
+	text-align: left;
+}
+
+.m-4{
+	margin-bottom: 10vw;
+}
+
+.btnDefault{
+	margin-top: 10%;
+	padding-left:10px;
+	padding-right: 10px;
+	height: 145px;
+}
+
+.heightfix{
+	height: 850px;
+}
+
+.kontaktanfrage{
+	border: 0;
+}
+
+h4 {
+    margin-top: 5%;
+}
+
+#price{
+	display: contents;
+}
+
+@media screen and (max-width: 700px){
+	.heightfix{
+		height: 750px;
+	}
 }
