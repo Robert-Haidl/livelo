@@ -49,6 +49,16 @@ class User{
         return false;
     }
 
+    public function sendFragenkatalog($data){
+        if($this->sendBookingMailToAdmin($data)){
+            if($this->sendFragenkatalogMailToCustomer($data)){
+                $this->setResult("OK");
+                return true;
+            }
+        }
+        return false;
+    }
+
     public function setResult($message){
         $tempArray = array();
         $tempArray["status"] = $message;

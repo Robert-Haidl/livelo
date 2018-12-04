@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Livelo.</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="js/showLoading/css/showLoading.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fragenkatalog.css">
+</head>
+
+<body>
+
+    <div id="page-wrapper">
+
+
+        <!-- Header -->
+        <section id="showNavbar"></section>
+        <section id="zero">
+            <header id="header" class="alt">
+                <span class="nav-text">
+                    <a href="/">
+                        <span id="livelo_xs">liv</span>
+                        <span id="livelo_e_xs" class="tossing">e</span>
+                        <span id="livelo_xs">lo.</span>
+                    </a>
+                </span>
+                <nav id="nav">
+                    <ul>
+                        <li class="special">
+                            <a href="#menu" class="menuToggle"><span>Menu <i class="fas fa-bars"></i></span></a>
+                            <div id="menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="preise.html">Preiskalkulator</a></li>
+                                    <li><a href="anfrage.html">Anfrage</a></li>
+                                    <li><a onclick="dropdown()" class="dropbtn">Angebot</a></li>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="webseite-programmieren.html"><i class="fas fa-laptop"></i>
+                                            <div class="dropdown-element">Webdesign</div>
+                                        </a><br>
+                                        <a href="app-programmieren.html"><i class="fas fa-mobile-alt"></i>
+                                            <div class="dropdown-element">Appdesign</div>
+                                        </a>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+                    
+
+        <!-- Main -->
+        <article id="main">
+            <header>
+                <div class="fadeout">
+                    <h2>Bohrführerschein</h2>
+                    <p>Alles über Nägel, Schrauben und Dübel!</p>
+                </div>
+            </header>
+            <section class="wrapper style5">
+                <div class="inner">
+
+
+
+                    <h3>Fragenkatalog</h3>
+
+
+                    <form id="myform" method="post">
+
+                        <input type="text" name="firstname" placeholder="Vorname*" required>
+                        <br>
+                        <input type="text" name="lastname" placeholder="Nachname*" required>
+                        <br>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <br>
+                        <input type="text" name="telephone" placeholder="Telefonnummer*" required>
+                        <br>
+
+                        <textarea required maxlength="500" name="wish" rows="6" placeholder="Persönliche Nachricht*"></textarea>
+
+                        <center>
+                            <br>
+                            <h6>*Pflichtfeld</h6><br />
+                            <button type="submit" class="btnDefault">Fragenkatalog anfordern</button>
+                        </center>
+
+                    </form>
+
+                    <div class="contact">
+                        <div class="mb-2">Sie können uns auch gerne direkt kontaktieren:</div>
+                        <div>
+                            <i class="symbol fas fa-phone"></i>
+                            <a class="icon" href="tel:+436601567422"> 0660 1567422</a>
+                        </div>
+                        <div>
+                            <i class="symbol fas fa-envelope"></i>
+                            <a class="icon" href="mailto:haidlrob@gmail.com"> contact@livelo.at</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="copyright">
+                <li><a href="impressum.html" style="border: none;">Impressum</a></li>
+                <li><a href="anfrage.html" style="border: none; padding-left: 0.7vw;">Kontakt</a> </li>
+                <li><a href="datenschutz.html" style="border: none;">Datenschutz</a> </li>
+            </ul>
+        </footer>
+
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/showLoading/js/jquery.showLoading.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/jquery.scrollex.min.js"></script>
+    <script src="js/jquery.scrolly.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/move.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav-changeColor.js"></script>
+    <script src="js/fragenkatalog.js"></script>
+</body>
+
+</html>
