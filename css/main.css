@@ -5037,6 +5037,12 @@ body.is-mobile.landing #footer {
 	text-decoration: none;
 }
 
-#footer{
-	padding-left: 1%;
+@media screen and (min-width: 529px){
+	.copyright li{
+		margin-bottom: 1em;
+	}
+}
+
+.copyright a{
+	border: none;
 }

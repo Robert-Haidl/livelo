@@ -9,6 +9,11 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
+	transform: skewY(5deg);
+}
+
+.fadeout{
+	transform: skewY(-5deg);
 }
 
 .container {
@@ -23,19 +28,117 @@
     margin-left: -30%;
 	z-index: 0;
 	display: inline-block;
-
 }
 
-iframe{
-	height: 100%;
-	position:absolute;
-    left:2px;
-	top:2px;
-	width: 79.2%;
-	height: 67.2% ;
-	padding-top: 3.6%;
-	margin-left: -23.2%;
-	z-index:1;
+.portfolio-phone{
+	height: 80%;
+	width: 80%;
+	margin-left: -30%;
+	display:inline-block;
+	z-index:0;
+	display:none;
+}
+
+.inner-img1{
+	position: absolute;
+    left: 2px;
+    top: 2.5%;
+    background: url(../res/images/thevips.JPG);
+    background-size: cover;
+    width: 79%;
+    height: 29%;
+    margin-left: -23.1%;
+    z-index: 1;
+}
+
+.inner-img1:hover{
+	transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	opacity: 0.7;
+}
+
+.inner-img1-mobile{
+    position: absolute;
+    left: 2px;
+    top: 5%;
+    background: url(../res/images/thevips-mobile.JPG);
+    background-size: cover;
+    width: 60%;
+    height: 36%;
+    padding-top: 3.6%;
+    margin-left: -14.5%;
+    z-index: 1;
+    display: none;
+}
+
+.inner-img2{
+	position: absolute;
+    left: 2px;
+    top: 2.5%;
+    background: url(../res/images/sportenergie.JPG);
+    background-size: cover;
+    width: 79%;
+    height: 29%;
+    margin-left: -23.1%;
+    z-index: 1;
+}
+
+.inner-img2:hover{
+	transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	opacity: 0.7;
+}
+
+.inner-img2-mobile{
+	position: absolute;
+    left: 2px;
+    top: 5%;
+    background: url(../res/images/sportenergie-mobile.JPG);
+    background-size: cover;
+    width: 60%;
+    height: 36%;
+    padding-top: 3.6%;
+    margin-left: -14.5%;
+    z-index: 1;
+    display: none;
+}
+
+.inner-img3{
+	position: absolute;
+    left: 2px;
+    top: 2.5%;
+    background: url(../res/images/twerion.JPG);
+    background-size: cover;
+    width: 79%;
+    height: 29%;
+    margin-left: -23.1%;
+    z-index: 1;
+}
+
+.inner-img3:hover{
+	transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+	-o-transition: opacity .5s ease-in-out;
+	opacity: 0.7;
+}
+
+.inner-img3-mobile{
+	position: absolute;
+    left: 2px;
+    top: 5%;
+    background: url(../res/images/twerion-mobile.JPG);
+    background-size: cover;
+    width: 60%;
+    height: 36%;
+    padding-top: 3.6%;
+    margin-left: -14.5%;
+    z-index: 1;
+    display: none;
 }
 
 .innertext{
@@ -76,7 +179,7 @@ iframe{
 }
 
 .fa-angle-up{
-	padding-bottom: 1.5vw;
+	padding-bottom: 2vw;
 }
 
 .firstbutton:hover{
@@ -85,4 +188,69 @@ iframe{
 
 .lastbutton:hover{
 	cursor: default;
+}
+
+.website-hover:hover{
+	text-decoration: none;
+}
+
+.website-hover h1:hover{
+	text-decoration: none;
+	transition: background-color .5s ease-in-out;
+    -moz-transition: background-color .5s ease-in-out;
+    -webkit-transition: background-color .5s ease-in-out;
+	-o-transition: background-color .5s ease-in-out;
+	background-color: #2E3842;
+}
+
+.portfolio-text-left{
+	margin-top: 20%;
+	text-align: left;
+}
+
+.portfolio-text-right{
+	margin-top: 20%;
+	text-align: right;
+}
+
+.little-pages img{
+	width: 50%;
+	margin-left: -0.5% !important;
+	margin-top: -0.2%;
+	padding:0 !important;
+}
+
+.little-pages{
+	margin-bottom: 10%;
+}
+
+@media screen and (max-width: 600px){
+	.innertext {
+		z-index: 2;
+		display: inline-block;
+		float: right;
+		width: 76%;
+		margin-top: -100%;
+		font-size: 5vw;
+		text-align: center;
+		margin-right: -15%;
+	}
+
+	.fa-angle-down, .fa-angle-up{
+		font-size: 10vw;
+	}
+
+	#main>header {
+		transform: skewY(10deg);
+	}
+	
+	.fadeout{
+		transform: skewY(-10deg);
+	}
+
+	.little-pages img {
+		width: 100%;
+		margin-top: -0.9%;
+		padding: 0 !important;
+	}
 }

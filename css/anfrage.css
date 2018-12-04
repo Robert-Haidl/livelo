@@ -9,6 +9,11 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
+	transform: skewY(5deg);
+}
+
+.fadeout{
+	transform: skewY(-5deg);
 }
 
 .symbol{
@@ -16,18 +21,75 @@
     padding: 5px;
 }
 
-.contact{
+  .contactbutton {
+	height: 25.5vw;
+	width: 5vw;
+	padding-top: 12vw;
+	padding-bottom: 5vw;
+	background: white;
+	border: solid 1.5px;
+	border-color: #2E3842;
+	border-radius: 2px;
+	margin-top: -39vw;
+	z-index: 999;
+	position: absolute;
 	text-align: center;
-	border: solid 1px black;
-	border-radius: 3px;
-	padding: 1vw;
-	margin-top: 5vw;
-	color: white;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/kontaktbackground.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+	font-size: 80%;
+  }
+
+  .contactbutton:hover{
+	cursor: pointer;
+	opacity: 0.8;
+	transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+  }
+
+  .contactbutton h2, .contactbutton i{
+	color: #2E3842 !important;
+	/* FF3.5+ */
+	-moz-transform: rotate(-90.0deg);
+	/* Opera 10.5 */
+	-o-transform: rotate(-90.0deg);
+	/* Saf3.1+, Chrome */
+	-webkit-transform: rotate(-90.0deg);
+	/* IE6,IE7 */
+	filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+	/* IE8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+	/* Standard */
+	transform: rotate(-90.0deg);
+	}
+	
+	.fa-times-circle{
+		display: none;
+		float: right;
+		padding-right: 2vw;
+		font-size: large;
+	}
+
+	.fa-times-circle:hover{
+		cursor: pointer;
+	}
+
+@keyframes contactspread{
+	to{
+		width: 100%;
+	}
+}
+
+@keyframes contactback{
+	from{
+		height: 100%;
+	}
+	to{
+		height:5%; 
+	}
+}
+
+@media screen and (max-width: 980px){
+	.contactbutton{
+		display:none;
+	}
 }
