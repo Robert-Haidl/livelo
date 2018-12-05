@@ -30,6 +30,15 @@ class User{
         }
     }
 
+    public function sendFragenkatalogMailToCustomer($data){
+        $mailer = new Mailer();
+        if($mailer->sendFragenkatalogMailToCustomer($data)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public function sendBookingMailToAdmin($data){
         $mailer = new Mailer();
         if($mailer->sendBookingMailToAdmin($data)){
