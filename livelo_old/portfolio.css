@@ -213,16 +213,6 @@
 	text-align: right;
 }
 
-.little-pages img{
-	width: 50%;
-	margin-left: -0.5% !important;
-	margin-top: -0.2%;
-	padding:0 !important;
-}
-
-.little-pages{
-	margin-bottom: 10%;
-}
 
 @media screen and (max-width: 600px){
 	.innertext {
@@ -246,11 +236,5 @@
 	
 	.fadeout{
 		transform: skewY(-10deg);
-	}
-
-	.little-pages img {
-		width: 100%;
-		margin-top: -0.9%;
-		padding: 0 !important;
 	}
 }

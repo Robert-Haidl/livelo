@@ -14,49 +14,21 @@
 
 .fadeout{
 	transform: skewY(-5deg);
-}
-}
-
-.creator-container{
-	display: inline-block;
-	max-width: 250px;
-	text-align: center;
-	margin: 1em;
+	z-index: 1;
 }
 
-.creator-container img{
-	width: 200px;
-}
-.creator-container h2{
-	margin: 0;
-}
-
-.creator-container h4{
-	font-weight: 100;
+.inner1{
+	background: url("../res/images/modernes-design.jpg");
+	background-size: cover;
+	transform: skewY(-5deg);
+	height: 40vw;
 }
 
-.creator-container p{
-	text-align: justify;
+.inner1-text{
+	transform: skewY(5deg);
 }
 
-.symbol-container{
-	display: inline-block;
-	max-width: 250px;
-	text-align: center;
-	margin: 1em;
-}
-
-.symbol-container p{
-	text-align: justify;
-}
-
-.symbol{
-	font-size: 2.5em;
-	padding: .4em;
-	color: goldenrod;
-}
-
-.features-container{
-	text-align: center;
+.inner{
+	z-index:-1;
 }
 

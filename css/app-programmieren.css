@@ -15,3 +15,71 @@
 .fadeout{
 	transform: skewY(-5deg);
 }
+
+.wrapper{
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.inner{
+	width: 100% !important;
+}
+
+.section-top{
+	background:linear-gradient(#2E3842, white);
+	border: none;
+}
+
+img.appdev-phone {
+    padding-left: 15%;
+    padding-top: 10%;
+	width: 40%;
+}
+
+.top-text{
+	margin-top: 20vw;
+	font-size: 2vw;
+}
+
+.symbol-container{
+	text-align:center;
+}
+
+.symbol-text{
+	text-align: center;
+}
+
+.section-middle{
+	margin-top: 10vw;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-bottom: 5vw;
+}
+
+.row i{
+	font-size: 40px;
+	padding-bottom: 40px;
+}
+
+.row h2{
+	height: 70px;
+}
+
+.section-middle-image{
+	height: 25vw;
+	width: 100vw;
+	background-image: url("../res/images/app-design.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	text-align: center;
+	padding-top: 11%;
+	font-size:20px;
+}
+
+.section-middle-image h1{
+	font-size: 25px;
+}
+
+.section-bottom{
+	height: 40vw;
+}
