@@ -50,10 +50,12 @@ img.appdev-phone {
 }
 
 .section-middle{
-	margin-top: 10vw;
+	color: #2E3842;
+	background: white;
+	padding-top: 10vw;
 	padding-right: 5%;
 	padding-left: 5%;
-	margin-bottom: 5vw;
+	padding-bottom: 5vw;
 }
 
 .row i{
@@ -63,6 +65,7 @@ img.appdev-phone {
 
 .row h2{
 	height: 70px;
+	color: #2E3842;
 }
 
 .section-middle-image{
@@ -82,4 +85,35 @@ img.appdev-phone {
 
 .section-bottom{
 	height: 40vw;
+}
+
+@media screen and (max-width: 600px){
+	img.appdev-phone {
+		padding-left: 0;
+		padding-top: 0;
+	}
+
+	.section-top{
+		margin-top: 10vh;
+		margin-left: -40vw;
+	}
+
+	.top-text{
+		font-size: 1.5em;
+	}
+
+	.section-middle-image{
+		height: 52vh;
+		width: 100vw;
+		background-image: url("../res/images/app-design.jpg");
+		background-size:cover;
+		background-attachment: fixed;
+		text-align: center;
+		padding-top: 15vh;
+		font-size:20px;
+	}
+
+	.section-bottom{
+		height: 40vh;
+	}
 }

@@ -1,3 +1,8 @@
+@font-face {
+	font-family: showg;
+	src: url('../fonts/SHOWG.TTF');
+}
+
 #main>header {
 	padding: 12em 0 10em 0;
 	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/images/background-code.jpg");
@@ -12,23 +17,23 @@
 	transform: skewY(5deg);
 }
 
-.fadeout{
+.fadeout {
 	transform: skewY(-5deg);
 	z-index: 1;
 }
 
-.section-top{
-	background:white;
+.section-top {
+	background: white;
 	height: 60vw;
 }
 
 img.webdev-plant {
-    padding-left: 15%;
-    padding-top: 5vw;
+	padding-left: 15%;
+	padding-top: 5vw;
 	width: 120%;
 }
 
-.top-text{
+.top-text {
 	padding-top: 10vw;
 	font-size: 2vw;
 	color: #2E3842;
@@ -36,163 +41,347 @@ img.webdev-plant {
 	text-align: right;
 }
 
-.top-text h1{
+.top-text h1 {
 	color: #2E3842;
 }
 
-.anbieten{
+.anbieten {
 	text-align: center;
-    font-size: 2em;
-    padding: 1.5vw;
-    z-index: 999;
-    background: #2E3842;
-    position: absolute;
+	font-size: 2em;
+	padding: 1.5vw;
+	z-index: 999;
+	background: #2E3842;
+	position: absolute;
 	margin-top: -14vw;
 	border-radius: 3px;
 }
 
-.anbieten h1{
+.anbieten h1 {
 	color: white;
 	margin-bottom: 0;
 }
 
-.inner1{
-	margin-top:-10vw;
+.inner1 {
+	margin-top: -10vw;
 	text-align: right;
 	height: 35vw;
-	background-image: -moz-linear-gradient(left, rgba(218,165,32,0.7), rgba(218,165,32,0.3)), url("../res/images/inner1.jpg");
-	background-image: -webkit-linear-gradient(left, rgba(218,165,32,0.7), rgba(218,165,32,0.3)), url("../res/images/inner1.jpg");
-	background-image: -ms-linear-gradient(left, rgba(218,165,32,0.7), rgba(218,165,32,0.3)), url("../res/images/inner1.jpg");
-	background-image: linear-gradient(left, rgba(218,165,32,0.7), rgba(218,165,32,0.3)), url("../res/images/inner1.jpg");
+	background-image: -moz-linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url("../res/images/inner1.jpg");
+	background-image: -webkit-linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url("../res/images/inner1.jpg");
+	background-image: -ms-linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url("../res/images/inner1.jpg");
+	background-image: linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url("../res/images/inner1.jpg");
 	transform: skewY(-5deg);
 	z-index: 0;
+	background-size: cover;
 }
 
-.inner1-text{
-	color:#2E3842;
+.inner1-text {
+	color: #2E3842;
 	padding: 10%;
 	transform: skewY(5deg);
 	font-size: 1.5vw;
 }
 
-.inner1-text h1{
+.inner1-text h1 {
 	font-size: 2vw;
 	color: #2E3842
 }
 
-.inner2{
-	margin-top:-10vw;
+.inner2 {
+	margin-top: -10vw;
 	height: 35vw;
 	transform: skewY(5deg);
-	background-image: -moz-linear-gradient(left, rgba(255,255,255,0.3), rgba(255,255,255,0.7)), url("../res/images/inner2.jpg");
-	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0.3), rgba(255,255,255,0.7)), url("../res/images/inner2.jpg");
-	background-image: -ms-linear-gradient(left, rgba(255,255,255,0.3), rgba(255,255,255,0.7)), url("../res/images/inner2.jpg");
-	background-image: linear-gradient(left, rgba(255,255,255,0.3), rgba(255,255,255,0.7)), url("../res/images/inner2.jpg");
+	background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+	background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+	background-image: linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+	background-size: cover;
 }
 
-.inner2-text{
+.inner2-text {
 	padding: 10%;
 	transform: skewY(-5deg);
-	color: #2E3842;
+	color: #1C3B54;
 	font-size: 1.5vw;
 }
 
-.inner2-text h1{
+.inner2-text h1 {
 	color: #2E3842;
 	font-size: 2vw;
 }
 
 
-.inner3{
-	margin-top:-10vw;
+.inner3 {
+	margin-top: -10vw;
 	text-align: right;
 	height: 35vw;
 	transform: skewY(-5deg);
 	background-color: #2E3842;
-	background-image: -moz-linear-gradient(left, rgba(27,55,78,0.3), rgba(27,55,78,0.7)), url("../res/images/inner3.jpg");
-	background-image: -webkit-linear-gradient(left, rgba(27,55,78,0.3), rgba(27,55,78,0.7)), url("../res/images/inner3.jpg");
-	background-image: -ms-linear-gradient(left, rgba(27,55,78,0.3), rgba(27,55,78,0.7)), url("../res/images/inner3.jpg");
-	background-image: linear-gradient(left, rgba(27,55,78,0.3), rgba(27,55,78,0.7)), url("../res/images/inner3.jpg");
+	background-image: -moz-linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+	background-image: -webkit-linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+	background-image: -ms-linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+	background-image: linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+	background-size: cover;
 }
 
-.inner3-text{
+.inner3-text {
 	padding: 10%;
 	transform: skewY(5deg);
-	color:white;
+	color: white;
 	font-size: 1.5vw;
 }
 
-.inner3-text h1{
+.inner3-text h1 {
 	font-size: 2vw;
 }
 
-.inner4{
-margin-top: -10vw;
-background-color: white;
-padding-right: 15%;
-padding-left: 15%;
-transform: skewY(5deg);
-text-align: center;
-height: 40vw;
+.inner4 {
+	margin-top: -10vw;
+	background-color: white;
+	padding-right: 15%;
+	padding-left: 15%;
+	transform: skewY(5deg);
+	text-align: center;
+	height: 40vw;
 }
 
-.inner4 img{
+.inner4 img {
 	height: 50%;
 }
 
-.inner4-images{
+.inner4-images {
 	transform: skewY(-5deg);
 }
 
-.inner4 h1{
-	color:#2E3842;
+.inner4 h1 {
+	font-family: showg;
+	color: #1C3B54;
 	font-size: 2em;
 	transform: skewY(-5deg);
 }
 
-.inner5{
-	margin-top: 20vw;
+.inner5 {
 	background-color: white;
 	padding-top: 0;
-	z-index:99;
+	z-index: 99;
 }
 
-.inner5-text{
-	text-align: left;
+.inner5-text {
+	text-align: center;
 	padding: 15%;
 	color: #2E3842;
 	font-size: 1.5vw;
 	padding-bottom: 5vw;
 }
 
-.inner5-text h1{
+.inner5-text h1 {
+	padding-top: 15vw;
 	color: #2E3842;
 	padding-bottom: 3vw;
 }
 
-.programming-images img{
+.programming-images img {
 	height: 150px;
 	filter: grayscale();
 }
 
-.programming-images img:hover{
+.programming-images img:hover {
 	filter: none;
 }
 
-.inner6{
-	margin-top:-10vw;
-	height: 40vw;
-	background-color:#2E3842;
+.inner6 {
+	margin-top: -10vw;
+	height: 23vw;
 	position: absolute;
+	text-align: center;
+	background: none;
 }
 
-.inner6 h1{
-	font-size: 3vw;
-	padding-top: 50%;
+.inner6 h1 {
+	padding: 0.7vw;
+    font-size: 3vw;
+	color: white;
+    background:#2E3842;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 30.3vw;
+    z-index: 999;
 }
 
-.inner6 img{
-	padding:0;
-	margin:0;
-	height: 40vw;;
+.inner6 img {
+	height: 23vw;
+	padding: 0;
+	margin: 0;
+}
+
+.inner6 a {
+	padding: 0;
+	margin: 0;
+}
+
+.inner6 a:hover {
+	filter: grayscale();
+}
+
+@media screen and (max-width: 600px) {
+
+	.top-text h1,
+	.top-text p {
+		color: #2E3842;
+		font-size: 2.5em;
+	}
+
+	.section-top {
+		background: white;
+		height: 80vw;
+	}
+
+	.anbieten {
+		margin-top: -2vh;
+		text-align: center;
+		font-size: 1.5em;
+		padding: 1.5vw;
+		z-index: 999;
+		background: #2E3842;
+		position: absolute;
+		border-radius: 3px;
+	}
+
+	.inner1 {
+		text-align: right;
+		height: 35vh;
+		background-image: -moz-linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url(../res/images/inner1.jpg);
+		background-image: -webkit-linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url(../res/images/inner1.jpg);
+		background-image: -ms-linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url(../res/images/inner1.jpg);
+		background-image: linear-gradient(left, rgba(218, 165, 32, 0.7), rgba(218, 165, 32, 0.3)), url(../res/images/inner1.jpg);
+		transform: skewY(-5deg);
+		z-index: 0;
+		background-size: cover;
+	}
+
+	.inner1-text {
+		margin-top: 10vw;
+		font-size: 0.8em;
+	}
+
+	.inner1-text h1 {
+		font-size: 1.2em;
+	}
+
+	.inner2 {
+		height: 35vh;
+		margin-top: -20vw;
+		transform: skewY(5deg);
+		background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+		background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+		background-image: -ms-linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+		background-image: linear-gradient(left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.7)), url("../res/images/inner2.jpg");
+		background-size: cover;
+		z-index: 0;
+	}
+
+	.inner2-text {
+		margin-top: 10vw;
+		font-size: 0.8em;
+	}
+
+	.inner2-text h1 {
+		font-size: 1.2em;
+	}
+
+
+	.inner3 {
+		margin-top: -20vw;
+		text-align: right;
+		height: 35vh;
+		transform: skewY(-5deg);
+		background-color: #2E3842;
+		background-image: -moz-linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+		background-image: -webkit-linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+		background-image: -ms-linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+		background-image: linear-gradient(left, rgba(27, 55, 78, 0.3), rgba(27, 55, 78, 0.7)), url("../res/images/inner3.jpg");
+		background-size: cover;
+	}
+
+	.inner3-text {
+		margin-top: 10vw;
+		font-size: 0.8em;
+	}
+
+	.inner3-text h1 {
+		font-size: 1.2em;
+	}
+
+	.inner4 {
+		background-color: white;
+		transform: skewY(5deg);
+		text-align: center;
+		height: 40vh;
+		padding:0;
+		padding-top: 10vh;
+		margin:0;
+	}
+	
+	.inner4 img {
+		height: 55px;
+		padding:0;
+		margin:0;
+	}
+	
+	.inner4-images {
+		transform: skewY(-5deg);
+		padding:0;
+		margin:0;
+		margin-left: 10%;
+	}
+	
+	.inner4 h1 {
+		font-family: showg;
+		color: #1C3B54;
+		font-size: 1.2em;
+		transform: skewY(-5deg);
+	}
+
+	.programming-images img {
+		height: 40px;
+		filter: grayscale();
+	}
+
+	.inner6 {
+		margin-top: -10vw;
+		height: 90vh;
+		position: unset;
+		text-align: center;
+		background: none;
+	}
+
+	.inner6 img {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.inner6 h1 {
+		width: 100%;
+		font-size: 1.5em;
+		color: white;
+		background: #2E3842;
+		position: relative;
+		z-index: 999;
+		margin: 0;
+		padding: 3%;
+	}
+
+	.inner5{
+		height: 20vh;
+		background-color:white;
+	}
+
+	.inner5-text{
+		background: white;
+	}
+
+	.inner5-text h1{
+		font-size: 2.5em;
+	}
 }
