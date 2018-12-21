@@ -49,6 +49,11 @@
     font-variant: small-caps;
     line-height: 0;
 }
+.slogan{
+    font-size: 1.3em;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-variant: small-caps;
+}
 
 #line {
     margin: 1em;
