@@ -17,7 +17,7 @@ function callClickListener() {
 
 
     var options = {
-        strings: ["IT Lösungen", "SEO", "Webdesign", "Appdesign"],
+        strings: ["SEO", "Webdesign", "Appdesign"],
         typeSpeed: 200,
         loop: true,
         loopCount: Infinity,

@@ -84,7 +84,26 @@ img.appdev-phone {
 }
 
 .section-bottom{
-	height: 40vw;
+	height: 95vh;
+}
+
+.bottom-left{
+	padding-top: 25vh;
+}
+
+.bottom-left h1{
+	font-size: 2em;
+}
+
+.bottom-left p{
+	font-size: 1.3em;
+}
+
+.bottom-right img{
+	padding-top: 10vh;
+	padding-left: 10vw;
+	height: 80vh;
+	filter: contrast();
 }
 
 @media screen and (max-width: 600px){
