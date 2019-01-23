@@ -71,11 +71,13 @@ img.appdev-phone {
 .section-middle-image{
 	height: 25vw;
 	width: 100vw;
+	padding-right:5%;
+	padding-left: 5%;
 	background-image: url("../res/images/app-design.jpg");
 	background-size:cover;
 	background-attachment: fixed;
 	text-align: center;
-	padding-top: 11%;
+	padding-top: 10vw;
 	font-size:20px;
 }
 
@@ -83,12 +85,9 @@ img.appdev-phone {
 	font-size: 25px;
 }
 
-.section-bottom{
-	height: 95vh;
-}
-
 .bottom-left{
-	padding-top: 25vh;
+	padding-top: 26vh;
+	text-align: justify;
 }
 
 .bottom-left h1{
@@ -97,13 +96,60 @@ img.appdev-phone {
 
 .bottom-left p{
 	font-size: 1.3em;
+	padding-bottom: 20vh;
 }
 
 .bottom-right img{
-	padding-top: 10vh;
-	padding-left: 10vw;
-	height: 80vh;
+	padding-top:15vh;
+	width: 100%;
 	filter: contrast();
+}
+
+@media screen and (max-width:1200px){
+
+.bottom-right img{
+	padding-top:11vh;
+	width: 100%;
+	filter: contrast();
+	padding-bottom: 0;
+}
+
+.bottom-left{
+	padding-top:10vh;
+	padding-bottom:0;
+}
+
+.bottom-left p{
+	padding-bottom: 10vh;
+}
+}
+
+@media screen and (max-width: 990px){
+	.bottom-right img{
+		padding-top: 0;
+		filter: contrast();
+		padding-bottom: 10vh;
+	}	
+
+	.bottom-left p{
+		font-size: 1.3em;
+		padding-bottom: 10vh;
+	}
+
+	.bottom-left{
+		padding-top: 0;
+	}
+
+	.section-middle-image{
+		padding-top: 15vh;
+		height: 45vh;
+	}
+
+	.bottom-right {
+		padding-top: 10vh;
+		padding-bottom: 0;
+	}
+
 }
 
 @media screen and (max-width: 600px){
@@ -122,17 +168,35 @@ img.appdev-phone {
 	}
 
 	.section-middle-image{
-		height: 52vh;
 		width: 100vw;
 		background-image: url("../res/images/app-design.jpg");
 		background-size:cover;
 		background-attachment: fixed;
 		text-align: center;
+		padding: 2vw;
+		height:45vh;
 		padding-top: 15vh;
-		font-size:20px;
+		font-size:15px;
 	}
 
-	.section-bottom{
-		height: 40vh;
+	.bottom-left {
+		padding-top: 0;
+	}
+
+	.bottom-left h1{
+		font-size: 1.6em;
+		padding: 2vw;
+	}
+	
+	.bottom-left p{
+		font-size: 1.2em;
+		padding: 2vw;
+		padding-bottom: 5vh;
+	}
+
+	@media screen and (max-width: 330px){
+		.section-middle-image{
+			padding-top: 10vh;
+		}
 	}
 }

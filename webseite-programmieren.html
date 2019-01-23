@@ -46,11 +46,17 @@
                             <a href="#menu" class="menuToggle"><span>Menu <i class="fas fa-bars"></i></span></a>
                             <div id="menu">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="#landing">Home</a></li>
                                     <li><a href="preise.html">Preiskalkulator</a></li>
                                     <li><a href="anfrage.html">Anfrage</a></li>
-                                    <li><a href="webseite-programmieren.html">Webdesign</a></li>
-                                    <li><a href="app-programmieren.html">App-Entwicklung</a></li>
+                                    <li><a onclick="dropdown()" class="dropbtn">Angebot</a></li>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="webseite-programmieren.html"><i class="fas fa-laptop"></i>
+                                            <div class="dropdown-element">Webdesign</div>
+                                        </a><br>
+                                        <a href="app-programmieren.html"><i class="fas fa-mobile-alt"></i>
+                                            <div class="dropdown-element">Appdesign</div>
+                                        </a>
                                 </ul>
                             </div>
                         </li>
@@ -91,8 +97,10 @@
                             <h1>Modernes Web- und Logodesign</h1>
                             <p>Ihr Firmenlogo als zentrales Element Ihrer Unternehmenskommunikation bedeutet in erster
                                 Linie Wiedererkennung und Markenbindung.
-                                Schnell, individuell, zu fairen Preisen und direkt in Wien. Livelo ist Ihr kompetenter Partner in Sachen Planung, Gestaltung und Umsetzung Ihres Web-Auftrittes.
-                                Wir erstellen Ihr Logo und Webseite welche perfekt zu Ihnen, Ihrem Unternehmen und Ihrer Zielgruppe passt.</p>
+                                Schnell, individuell, zu fairen Preisen und direkt in Wien. Livelo ist Ihr kompetenter
+                                Partner in Sachen Planung, Gestaltung und Umsetzung Ihres Web-Auftrittes.
+                                Wir erstellen Ihr Logo und Webseite welche perfekt zu Ihnen, Ihrem Unternehmen und
+                                Ihrer Zielgruppe passt.</p>
                         </div>
                     </div>
                     <div class="inner2">
@@ -116,37 +124,32 @@
                     </div>
                     <div class="inner4 wrapper">
                     </div>
-                    <div class="inner6 row">
-                        <h1 class="col-4">Letzte Projekte</h1>
-                        <div class="col-8">
-                            <div class="row">
-                                <a href="https://the-vips.at/" target="_blank" class="col-md-4"><img src="res/images/thevips.JPG"
-                                        alt=""></a>
-                                <a href="https://www.twerion.net/" target="_blank" class="col-md-4"><img src="res/images/twerion.JPG"
-                                        alt=""></a>
-                                <a href="https://sportenergie.at/" target="_blank" class="col-md-4"><img src="res/images/sportenergie.JPG"
-                                        alt=""></a>
-                            </div>
+                    <div class="inner6">
+                        <h1>Letzte Projekte</h1>
+                        <div class="row">
+                            <a href="https://the-vips.at/" target="_blank" class="col-md-4"><img src="res/images/thevips.JPG" alt=""></a>
+                            <a href="https://www.twerion.net/" target="_blank" class="col-md-4"><img src="res/images/twerion.JPG" alt=""></a>
+                            <a href="https://sportenergie.at/" target="_blank" class="col-md-4"><img src="res/images/sportenergie.JPG" alt=""></a>
                         </div>
                     </div>
-                    <div class="inner5 row">
-                        <div class="col-8">
+                    <div class="inner5">
+                        <div class="inner5-text">
+                            <h1>Unsere besten Freunde</h1>
                             <div class="row programming-images">
-                                <img class="col-2" src="res/images/programming/angular.jpg" alt="Angular Logo">
-                                <img class="col-2" src="res/images/programming/bootstrap.jpg" alt="Bootstrap Logo">
-                                <img class="col-2" src="res/images/programming/css.jpg" alt="CSS Logo">
-                                <img class="col-2" src="res/images/programming/git.jpg" alt="Git Logo">
-                                <img class="col-2" src="res/images/programming/google_analytics.jpg" alt="Google Analytics Logo">
-                                <img class="col-2" src="res/images/programming/sass.jpg" alt="Sass Logo">
-                                <img class="col-2" src="res/images/programming/html.jpg" alt="HTML5 Logo">
-                                <img class="col-2" src="res/images/programming/ionic.jpg" alt="Ionic Logo">
-                                <img class="col-2" src="res/images/programming/jquery.jpg" alt="JQuery Logo">
-                                <img class="col-2" src="res/images/programming/php.jpg" alt="PHP Logo">
-                                <img class="col-2" src="res/images/programming/js2.jpg" alt="JS Logo">
-                                <img class="col-2" src="res/images/programming/meistertask_not_transparent.jpg" alt="MeisterTask Logo">
+                                <img class="col-2" src="res/images/programming/angular.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/bootstrap.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/css.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/git.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/google_analytics.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/sass.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/html.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/ionic.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/jquery.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/php.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/js2.jpg" alt="">
+                                <img class="col-2" src="res/images/programming/meistertask_not_transparent.jpg" alt="">
                             </div>
                         </div>
-                        <h1 class="col-4">Unsere besten Freunde</h1>
                     </div>
                     <div class="inner7">
                         <h1>Konnten wir Sie überzeugen?</h1>
@@ -193,7 +196,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/nav-changeColor.js"></script>
-    <script src="js/website-programmieren.js"></script>
 </body>
 
 </html>

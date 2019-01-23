@@ -5046,3 +5046,70 @@ body.is-mobile.landing #footer {
 .copyright a{
 	border: none;
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn:hover {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 1.2vw;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+}
+
+.dropdown-content a {
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    text-decoration-style: none;
+    display: block;
+    border: none;
+    letter-spacing: 0.225em;
+    padding: 0;
+    margin: 0;
+    margin-left: 40% !important;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+}
+
+.dropdown-content a:hover {
+    color: goldenrod;
+    transition: 0.5s;
+}
+
+.dropdown-content i {
+    padding-right: 0.5vw;
+}
+
+.dropdown-content i,
+.dropdown-element {
+    display: inline;
+}
+
+.fa-mobile-alt {
+    margin-right: 0.5vw;
+}
+
+.fa-laptop {
+    margin-left: -0.4vw;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+#resizethen{
+    width: 65%;
+}
