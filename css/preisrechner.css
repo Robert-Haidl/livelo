@@ -93,47 +93,4 @@
 
 .icon:hover{
     color: goldenrod;
-<<<<<<< HEAD
-}
-
-.m-4, h3{
-	float: left;
-	text-align: left;
-}
-
-.m-4{
-	margin-bottom: 10vw;
-}
-
-.btnDefault{
-	padding-left:10px;
-	padding-right: 10px;
-}
-
-.heightfix{
-	height: 700px;
-}
-
-.kontaktanfrage{
-	border: 0;
-}
-
-h4 {
-    margin-top: 5%;
-}
-
-#price{
-	display: contents;
-}
-
-@media screen and (max-width: 700px){
-	.heightfix{
-		height: 600px;
-	}
-
-	#start{
-		font-size: 16px;
-	}
-=======
->>>>>>> 557f2df15b4866923ee6cd5d4da1cc3b5a4a5d44
 }

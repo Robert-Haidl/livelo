@@ -99,11 +99,24 @@ img.appdev-phone {
 	padding-bottom: 20vh;
 }
 
+.bottom-left a{
+	text-decoration: none;
+	border: none;
+	color: goldenrod;
+}
+
+.bottom-left a:hover{
+	text-decoration: none;
+	color: white;
+}
+
 .bottom-right img{
 	padding-top:15vh;
 	width: 100%;
 	filter: contrast();
 }
+
+
 
 @media screen and (max-width:1200px){
 
